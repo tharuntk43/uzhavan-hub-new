@@ -1,0 +1,38 @@
+{
+  "name": "uzhavan-hub",
+  "version": "2.0.0",
+  "description": "Uzhavan Hub (உழவன் ஹப்) — Complete AI-Powered Smart Agriculture Platform for Tamil Nadu Farmers",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "node server/server.js",
+    "seed": "node server/database/seed.js",
+    "test": "node tests/test_api_endpoints.js",
+    "test:datasets": "python tests/test_json_datasets.py",
+    "test:all": "python tests/test_json_datasets.py && node tests/test_api_endpoints.js"
+  },
+  "keywords": [
+    "agriculture",
+    "smart-farming",
+    "tamil-nadu",
+    "crop-advisor",
+    "decision-engine",
+    "mandi-prices",
+    "uzhavan-hub",
+    "pwa"
+  ],
+  "author": "Uzhavan Hub Engineering Team",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

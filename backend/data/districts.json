@@ -1,0 +1,472 @@
+[
+  {
+    "id": "ariyalur",
+    "name": "Ariyalur",
+    "nameTa": "அரியலூர்",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Red & Black Soil",
+    "rainfallMm": 954,
+    "majorMandis": [
+      "Ariyalur",
+      "Jayankondam"
+    ]
+  },
+  {
+    "id": "chengalpattu",
+    "name": "Chengalpattu",
+    "nameTa": "செங்கல்பட்டு",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Coastal Alluvium & Sandy Clay",
+    "rainfallMm": 1200,
+    "majorMandis": [
+      "Chengalpattu",
+      "Madurantakam"
+    ]
+  },
+  {
+    "id": "chennai",
+    "name": "Chennai",
+    "nameTa": "சென்னை",
+    "zone": "Coastal Zone",
+    "dominantSoil": "Coastal Alluvium",
+    "rainfallMm": 1300,
+    "majorMandis": [
+      "Koyambedu Wholesale Market"
+    ]
+  },
+  {
+    "id": "coimbatore",
+    "name": "Coimbatore",
+    "nameTa": "கோயம்புத்தூர்",
+    "zone": "Western Zone",
+    "dominantSoil": "Red Loam & Black Soil",
+    "rainfallMm": 670,
+    "majorMandis": [
+      "R.S. Puram",
+      "Pollachi",
+      "Mettupalayam"
+    ]
+  },
+  {
+    "id": "cuddalore",
+    "name": "Cuddalore",
+    "nameTa": "கடலூர்",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Coastal Alluvial & Red Loam",
+    "rainfallMm": 1250,
+    "majorMandis": [
+      "Cuddalore",
+      "Virudhachalam",
+      "Chidambaram"
+    ]
+  },
+  {
+    "id": "dharmapuri",
+    "name": "Dharmapuri",
+    "nameTa": "தர்மபுரி",
+    "zone": "North Western Zone",
+    "dominantSoil": "Red Sandy Loam",
+    "rainfallMm": 850,
+    "majorMandis": [
+      "Dharmapuri",
+      "Palacode",
+      "Harur"
+    ]
+  },
+  {
+    "id": "dindigul",
+    "name": "Dindigul",
+    "nameTa": "திண்டுக்கல்",
+    "zone": "Southern Zone",
+    "dominantSoil": "Red Loam & Black Soil",
+    "rainfallMm": 810,
+    "majorMandis": [
+      "Dindigul Market",
+      "Oddanchatram",
+      "Palani"
+    ]
+  },
+  {
+    "id": "erode",
+    "name": "Erode",
+    "nameTa": "ஈரோடு",
+    "zone": "Western Zone",
+    "dominantSoil": "Red Sandy Loam & Black Soil",
+    "rainfallMm": 700,
+    "majorMandis": [
+      "Perundurai Turmeric Mandi",
+      "Erode Regulated Market",
+      "Gobichettipalayam"
+    ]
+  },
+  {
+    "id": "kallakurichi",
+    "name": "Kallakurichi",
+    "nameTa": "கள்ளக்குறிச்சி",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Red & Black Loam",
+    "rainfallMm": 1050,
+    "majorMandis": [
+      "Kallakurichi",
+      "Ulundurpet",
+      "Chinnasalem"
+    ]
+  },
+  {
+    "id": "kanchipuram",
+    "name": "Kanchipuram",
+    "nameTa": "காஞ்சிபுரம்",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Sandy Clay Loam",
+    "rainfallMm": 1210,
+    "majorMandis": [
+      "Kanchipuram",
+      "Sriperumbudur"
+    ]
+  },
+  {
+    "id": "kanyakumari",
+    "name": "Kanyakumari",
+    "nameTa": "கன்னியாகுமரி",
+    "zone": "High Rainfall Zone",
+    "dominantSoil": "Laterite & Red Loam",
+    "rainfallMm": 1450,
+    "majorMandis": [
+      "Nagercoil",
+      "Thuckalay"
+    ]
+  },
+  {
+    "id": "karur",
+    "name": "Karur",
+    "nameTa": "கரூர்",
+    "zone": "Western Zone",
+    "dominantSoil": "Red Loam & Alluvial",
+    "rainfallMm": 650,
+    "majorMandis": [
+      "Karur Regulated Market",
+      "Kulithalai"
+    ]
+  },
+  {
+    "id": "krishnagiri",
+    "name": "Krishnagiri",
+    "nameTa": "கிருஷ்ணகிரி",
+    "zone": "North Western Zone",
+    "dominantSoil": "Red Loam & Sandy Clay",
+    "rainfallMm": 830,
+    "majorMandis": [
+      "Krishnagiri Mango Market",
+      "Hosur",
+      "Pochampalli"
+    ]
+  },
+  {
+    "id": "madurai",
+    "name": "Madurai",
+    "nameTa": "மதுரை",
+    "zone": "Southern Zone",
+    "dominantSoil": "Black Cotton & Red Loam",
+    "rainfallMm": 840,
+    "majorMandis": [
+      "Mattuthavani Central Market",
+      "Usilampatti",
+      "Vadipatti"
+    ]
+  },
+  {
+    "id": "mayiladuthurai",
+    "name": "Mayiladuthurai",
+    "nameTa": "மயிலாடுதுறை",
+    "zone": "Cauvery Delta Zone",
+    "dominantSoil": "Deltaic Alluvium & Heavy Clay",
+    "rainfallMm": 1280,
+    "majorMandis": [
+      "Mayiladuthurai",
+      "Sirkazhi"
+    ]
+  },
+  {
+    "id": "nagapattinam",
+    "name": "Nagapattinam",
+    "nameTa": "நாகப்பட்டினம்",
+    "zone": "Cauvery Delta Zone",
+    "dominantSoil": "Coastal Alluvium & Clay",
+    "rainfallMm": 1340,
+    "majorMandis": [
+      "Nagapattinam",
+      "Vedaranyam"
+    ]
+  },
+  {
+    "id": "namakkal",
+    "name": "Namakkal",
+    "nameTa": "நாமக்கல்",
+    "zone": "North Western Zone",
+    "dominantSoil": "Red Loam & Black Soil",
+    "rainfallMm": 760,
+    "majorMandis": [
+      "Namakkal Egg & Agri Mandi",
+      "Rasipuram",
+      "Tiruchengode"
+    ]
+  },
+  {
+    "id": "nilgiris",
+    "name": "Nilgiris",
+    "nameTa": "நீலகிரி",
+    "zone": "High Altitude Hill Zone",
+    "dominantSoil": "Laterite & Humus-Rich Loam",
+    "rainfallMm": 1800,
+    "majorMandis": [
+      "Ooty Vegetable Market",
+      "Coonoor Tea Auction"
+    ]
+  },
+  {
+    "id": "perambalur",
+    "name": "Perambalur",
+    "nameTa": "பெரம்பலூர்",
+    "zone": "Cauvery Delta Margin",
+    "dominantSoil": "Black Cotton Soil",
+    "rainfallMm": 900,
+    "majorMandis": [
+      "Perambalur Shallot & Maize Market"
+    ]
+  },
+  {
+    "id": "pudukkottai",
+    "name": "Pudukkottai",
+    "nameTa": "புதுக்கோட்டை",
+    "zone": "Southern Zone",
+    "dominantSoil": "Red Sandy Soil & Laterite",
+    "rainfallMm": 920,
+    "majorMandis": [
+      "Pudukkottai",
+      "Aranthangi",
+      "Alangudi"
+    ]
+  },
+  {
+    "id": "ramanathapuram",
+    "name": "Ramanathapuram",
+    "nameTa": "இராமநாதபுரம்",
+    "zone": "Southern Zone (Rainfed)",
+    "dominantSoil": "Coastal Sand & Black Soil",
+    "rainfallMm": 820,
+    "majorMandis": [
+      "Ramanathapuram Chilli Mandi",
+      "Paramakudi"
+    ]
+  },
+  {
+    "id": "ranipet",
+    "name": "Ranipet",
+    "nameTa": "ராணிப்பேட்டை",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Red Loam",
+    "rainfallMm": 1020,
+    "majorMandis": [
+      "Ranipet",
+      "Arakkonam"
+    ]
+  },
+  {
+    "id": "salem",
+    "name": "Salem",
+    "nameTa": "சேலம்",
+    "zone": "North Western Zone",
+    "dominantSoil": "Red Sandy Loam",
+    "rainfallMm": 990,
+    "majorMandis": [
+      "Salem Shevapet Market",
+      "Attur Sago Mandi"
+    ]
+  },
+  {
+    "id": "sivaganga",
+    "name": "Sivaganga",
+    "nameTa": "சிவகங்கை",
+    "zone": "Southern Zone",
+    "dominantSoil": "Red Loam & Laterite",
+    "rainfallMm": 890,
+    "majorMandis": [
+      "Sivaganga",
+      "Karaikudi",
+      "Manamadurai"
+    ]
+  },
+  {
+    "id": "tenkasi",
+    "name": "Tenkasi",
+    "nameTa": "தென்காசி",
+    "zone": "Southern Zone",
+    "dominantSoil": "Red Loam & Alluvium",
+    "rainfallMm": 1100,
+    "majorMandis": [
+      "Tenkasi Market",
+      "Sankarankovil"
+    ]
+  },
+  {
+    "id": "thanjavur",
+    "name": "Thanjavur",
+    "nameTa": "தஞ்சாவூர்",
+    "zone": "Cauvery Delta Zone",
+    "dominantSoil": "Clayey Alluvial Soil",
+    "rainfallMm": 1115,
+    "majorMandis": [
+      "Thanjavur APMC Yard",
+      "Kumbakonam Paddy Mandi",
+      "Papanasam"
+    ]
+  },
+  {
+    "id": "theni",
+    "name": "Theni",
+    "nameTa": "தேனி",
+    "zone": "Southern Zone",
+    "dominantSoil": "Red Loam & Rich Alluvium",
+    "rainfallMm": 830,
+    "majorMandis": [
+      "Theni Banana & Cardamom Market",
+      "Periyakulam",
+      "Bodinayakanur"
+    ]
+  },
+  {
+    "id": "thoothukudi",
+    "name": "Thoothukudi",
+    "nameTa": "தூத்துக்குடி",
+    "zone": "Southern Zone",
+    "dominantSoil": "Black Cotton & Coastal Sand",
+    "rainfallMm": 660,
+    "majorMandis": [
+      "Kovilpatti Millet & Cotton Mandi",
+      "Thoothukudi"
+    ]
+  },
+  {
+    "id": "tiruchirappalli",
+    "name": "Tiruchirappalli",
+    "nameTa": "திருச்சிராப்பள்ளி",
+    "zone": "Cauvery Delta Zone",
+    "dominantSoil": "Alluvial & Red Soil",
+    "rainfallMm": 820,
+    "majorMandis": [
+      "Trichy Gandhi Market",
+      "Manachanallur Rice Mill Mandi"
+    ]
+  },
+  {
+    "id": "tirunelveli",
+    "name": "Tirunelveli",
+    "nameTa": "திருநெல்வேலி",
+    "zone": "Southern Zone",
+    "dominantSoil": "Deep Black & Red Loam",
+    "rainfallMm": 815,
+    "majorMandis": [
+      "Tirunelveli NainarKulam Market",
+      "Ambasamudram"
+    ]
+  },
+  {
+    "id": "tirupathur",
+    "name": "Tirupathur",
+    "nameTa": "திருப்பத்தூர்",
+    "zone": "North Western Zone",
+    "dominantSoil": "Red Sandy Loam",
+    "rainfallMm": 940,
+    "majorMandis": [
+      "Tirupathur",
+      "Ambur",
+      "Vaniyambadi"
+    ]
+  },
+  {
+    "id": "tiruppur",
+    "name": "Tiruppur",
+    "nameTa": "திருப்பூர்",
+    "zone": "Western Zone",
+    "dominantSoil": "Red Soil & Black Clay",
+    "rainfallMm": 620,
+    "majorMandis": [
+      "Tiruppur Regulated Market",
+      "Udumalpet Maize & Cotton Mandi",
+      "Kangeyam"
+    ]
+  },
+  {
+    "id": "tiruvallur",
+    "name": "Tiruvallur",
+    "nameTa": "திருவள்ளூர்",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Sandy Clay Loam",
+    "rainfallMm": 1180,
+    "majorMandis": [
+      "Tiruvallur",
+      "Ponneri"
+    ]
+  },
+  {
+    "id": "tiruvannamalai",
+    "name": "Tiruvannamalai",
+    "nameTa": "திருவண்ணாமலை",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Red Loam & Sandy Clay",
+    "rainfallMm": 1050,
+    "majorMandis": [
+      "Tiruvannamalai Groundnut Mandi",
+      "Arani Rice Market"
+    ]
+  },
+  {
+    "id": "tiruvarur",
+    "name": "Tiruvarur",
+    "nameTa": "திருவாரூர்",
+    "zone": "Cauvery Delta Zone",
+    "dominantSoil": "Heavy Deltaic Clay & Alluvium",
+    "rainfallMm": 1260,
+    "majorMandis": [
+      "Tiruvarur Paddy Direct Purchase Centre",
+      "Mannargudi"
+    ]
+  },
+  {
+    "id": "vellore",
+    "name": "Vellore",
+    "nameTa": "வேலூர்",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Red Sandy Loam",
+    "rainfallMm": 970,
+    "majorMandis": [
+      "Vellore Makkan Market",
+      "Gudiyatham"
+    ]
+  },
+  {
+    "id": "viluppuram",
+    "name": "Viluppuram",
+    "nameTa": "விழுப்புரம்",
+    "zone": "North Eastern Zone",
+    "dominantSoil": "Red Loam & Sandy Soil",
+    "rainfallMm": 1060,
+    "majorMandis": [
+      "Viluppuram Groundnut & Paddy Mandi",
+      "Tindivanam"
+    ]
+  },
+  {
+    "id": "virudhunagar",
+    "name": "Virudhunagar",
+    "nameTa": "விருதுநகர்",
+    "zone": "Southern Zone",
+    "dominantSoil": "Deep Black Cotton Soil",
+    "rainfallMm": 780,
+    "majorMandis": [
+      "Virudhunagar Oilseed & Cotton Exchange",
+      "Rajapalayam",
+      "Sattur"
+    ]
+  }
+]

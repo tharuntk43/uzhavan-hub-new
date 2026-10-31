@@ -1,0 +1,90 @@
+[
+  {
+    "id": "labour_vadipatti_paddy",
+    "name": "Selvamani & Team (Vadipatti Paddy Workers)",
+    "nameTa": "செல்வமணி குழுவினர் (நெல் நடவு & அறுவடை)",
+    "leaderName": "Selvamani K.",
+    "district": "Madurai",
+    "village": "Vadipatti",
+    "teamSize": 12,
+    "primarySkills": [
+      "Paddy Transplanting",
+      "Weeding",
+      "Manual Harvesting"
+    ],
+    "dailyWagePerWorker": 650,
+    "workingHours": "8:00 AM - 3:00 PM (Field Hours)",
+    "rating": 4.9,
+    "completedJobs": 46,
+    "distanceKm": 3.4,
+    "contactPhone": "98430-11223",
+    "isAvailable": true,
+    "isDemo": true
+  },
+  {
+    "id": "labour_papanasam_transplant",
+    "name": "Cauvery Delta Sowing Crew",
+    "nameTa": "காவிரி டெல்டா நடவுக் குழு",
+    "leaderName": "Murugesan P.",
+    "district": "Thanjavur",
+    "village": "Papanasam",
+    "teamSize": 16,
+    "primarySkills": [
+      "Line Transplanting (SRI)",
+      "Weeding",
+      "Basal Fertilizer Application"
+    ],
+    "dailyWagePerWorker": 680,
+    "workingHours": "7:30 AM - 2:30 PM",
+    "rating": 4.8,
+    "completedJobs": 62,
+    "distanceKm": 4.1,
+    "contactPhone": "97880-44556",
+    "isAvailable": true,
+    "isDemo": true
+  },
+  {
+    "id": "labour_pollachi_coconut",
+    "name": "Pollachi Coconut & Orchard Climbers",
+    "nameTa": "பொள்ளாச்சி தென்னை மரம் ஏறுவோர் குழு",
+    "leaderName": "Arumugam M.",
+    "district": "Coimbatore",
+    "village": "Pollachi",
+    "teamSize": 6,
+    "primarySkills": [
+      "Coconut Harvesting",
+      "Crown Cleaning",
+      "Banana Propping"
+    ],
+    "dailyWagePerWorker": 850,
+    "workingHours": "7:00 AM - 1:00 PM",
+    "rating": 5.0,
+    "completedJobs": 88,
+    "distanceKm": 6.2,
+    "contactPhone": "94420-77889",
+    "isAvailable": true,
+    "isDemo": true
+  },
+  {
+    "id": "labour_erode_turmeric",
+    "name": "Erode Turmeric & Commercial Harvesting Team",
+    "nameTa": "ஈரோடு மஞ்சள் அறுவடைத் தொழிலாளர்கள்",
+    "leaderName": "Chinnasamy V.",
+    "district": "Erode",
+    "village": "Perundurai",
+    "teamSize": 14,
+    "primarySkills": [
+      "Turmeric Digging",
+      "Rhizome Boiling",
+      "Earthing Up"
+    ],
+    "dailyWagePerWorker": 700,
+    "workingHours": "8:00 AM - 3:00 PM",
+    "rating": 4.7,
+    "completedJobs": 39,
+    "distanceKm": 5.8,
+    "contactPhone": "98650-33441",
+    "isAvailable": true,
+    "isDemo": true
+  }
+]

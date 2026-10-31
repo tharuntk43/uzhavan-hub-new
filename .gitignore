@@ -1,22 +1,31 @@
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npm/
+
+# Environment
+.env
+.env.*.local
+
+# Databases & WAL logs
+*.db-journal
+*.db-wal
+*.db-shm
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyo
-
-# Virtual Environments
 venv/
 env/
-.env
 
 # Editor & OS artifacts
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
-
-# Temporary logs
-*.log
-
-# Binaries
 *.exe
+*.log

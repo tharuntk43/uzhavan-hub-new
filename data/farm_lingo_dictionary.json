@@ -1,0 +1,90 @@
+{
+  "categories": [
+    "Price & Rate Bargaining",
+    "Quality & Moisture Specifications",
+    "Quantity & Measurements",
+    "Delivery & Transport Logistics",
+    "Payment & Banking Terms"
+  ],
+  "glossary": [
+    {
+      "tamil": "குவிண்டால்",
+      "english": "Quintal (100 kg)",
+      "hindi": "क्विंटल (Quintal)",
+      "phonetic": "Kuvintal",
+      "def": "Standard wholesale unit of mass equal to 100 kilograms."
+    },
+    {
+      "tamil": "ஈரப்பதம்",
+      "english": "Moisture Content",
+      "hindi": "नमी (Nami)",
+      "phonetic": "Eerappatham",
+      "def": "Moisture percentage in grains; APMC standard for paddy is 14% max."
+    },
+    {
+      "tamil": "அட்வான்ஸ் தொகை",
+      "english": "Advance Payment",
+      "hindi": "अग्रिम भुगतान (Advance)",
+      "phonetic": "Advance Thogai",
+      "def": "Upfront token deposit paid before loading produce."
+    },
+    {
+      "tamil": "களத்து விலை",
+      "english": "Farmgate Price",
+      "hindi": "खेत का भाव (Khet ka Bhav)",
+      "phonetic": "Kalathu Vilai",
+      "def": "Net price paid directly at the farmer's threshing floor with zero transport deduction."
+    },
+    {
+      "tamil": "சாக்கு மூட்டை",
+      "english": "Gunny Bag (Bora)",
+      "hindi": "बोरा (Bora)",
+      "phonetic": "Saakku Moottai",
+      "def": "Standard jute bag; usually 75 kg for paddy and 50 kg for pulses."
+    },
+    {
+      "tamil": "எடை மேடை",
+      "english": "Weighbridge (Dharamkanta)",
+      "hindi": "धर्मकांटा (Dharam Kanta)",
+      "phonetic": "Edai Maedai",
+      "def": "Certified commercial weighing platform for truckloads."
+    },
+    {
+      "tamil": "தரகுக் கூலி / கமிஷன்",
+      "english": "Brokerage / Mandi Cess",
+      "hindi": "आढ़त / दलाली (Aadhat)",
+      "phonetic": "Tharagu Kooli",
+      "def": "Intermediary commission fee; legally regulated under APMC Act."
+    }
+  ],
+  "negotiationPhrases": [
+    {
+      "tamil": "இந்த விலைக்கு என்னால் கொடுக்க முடியாது. குறைந்தது ஒரு குவிண்டாலுக்கு ₹2,500 வேண்டும்.",
+      "english": "I cannot sell at this price. I need at least ₹2,500 per quintal.",
+      "hindi": "मैं इस भाव पर नहीं दे सकता। मुझे कम से कम ₹2,500 प्रति क्विंटल चाहिए।",
+      "phonetic": "Indha vilaikku ennaal kodukka mudiyaadhu. Kuraivadhu oru quintal-ukku ₹2,500 vaendum.",
+      "category": "Price & Rate Bargaining"
+    },
+    {
+      "tamil": "ஈரப்பதம் 14% க்கும் குறைவாக உள்ளது. இது முதல் தர நெல்.",
+      "english": "The moisture is well below 14%. This is Grade A quality paddy.",
+      "hindi": "नमी 14% से कम है। यह अव्वल दर्जे का धान है।",
+      "phonetic": "Eerappatham 14% kkum kuraivaaga ulladhu. Idhu mudhal thara nel.",
+      "category": "Quality & Moisture Specifications"
+    },
+    {
+      "tamil": "முழு தொகையையும் லோடிங் முடிந்தவுடன் உடனடியாக வங்கிக் கணக்கில் அனுப்ப வேண்டும்.",
+      "english": "Full payment must be transferred via IMPS/RTGS immediately after loading.",
+      "hindi": "गाड़ी लोड होते ही पूरा भुगतान बैंक खाते में आरटीजीएस/आईएमपीएस से करना होगा।",
+      "phonetic": "Muzhu thogaiyaiyum loading mudindhavudan udanadiyaaga vangi kanakkil anuppa vaendum.",
+      "category": "Payment & Banking Terms"
+    },
+    {
+      "tamil": "வண்டி வாடகை மற்றும் ஏற்றுக்கூலி உங்கள் பொறுப்பு.",
+      "english": "Transport truck freight and loading charges are on buyer's account.",
+      "hindi": "गाड़ी का भाड़ा और लोडिंग खर्चा खरीदार के जिम्मे होगा।",
+      "phonetic": "Vandi vaadagai matrum aetrukkooli ungal poruppu.",
+      "category": "Delivery & Transport Logistics"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "alluvial",
+    "name": "Clayey Alluvial Soil",
+    "nameTa": "வண்டல் மற்றும் களிமண் மண்",
+    "description": "Rich in potash and phosphoric acid, high water holding capacity. Dominant in Cauvery Delta.",
+    "phRange": "6.5 - 7.5",
+    "optimalPh": 7.0,
+    "texture": "Clay loam to heavy clay",
+    "organicCarbon": "0.60% - 0.85%",
+    "waterRetention": "High",
+    "cationExchangeCapacity": "30 - 45 meq/100g",
+    "suitableCrops": [
+      "Paddy",
+      "Sugarcane",
+      "Banana",
+      "Black Gram",
+      "Green Gram"
+    ],
+    "managementTips": "Puddling for wetland paddy; apply green manure (Daincha) to improve phosphate availability."
+  },
+  {
+    "id": "red_loam",
+    "name": "Red Loam Soil",
+    "nameTa": "செம்மண் மண்",
+    "description": "Formed from granite rocks, rich in iron and manganese, highly porous with good drainage.",
+    "phRange": "6.0 - 7.2",
+    "optimalPh": 6.8,
+    "texture": "Sandy loam to clay loam",
+    "organicCarbon": "0.40% - 0.65%",
+    "waterRetention": "Moderate",
+    "cationExchangeCapacity": "15 - 25 meq/100g",
+    "suitableCrops": [
+      "Groundnut",
+      "Millets",
+      "Cotton",
+      "Maize",
+      "Tomato",
+      "Pulses"
+    ],
+    "managementTips": "Apply Farm Yard Manure (FYM) 5 tonnes/acre to enhance moisture retention; split nitrogen applications."
+  },
+  {
+    "id": "black_cotton",
+    "name": "Black Cotton Soil (Regur)",
+    "nameTa": "கரிசல் மண்",
+    "description": "Deep clay rich in montmorillonite, swells when wet and cracks deeply when dry. Excellent moisture holding.",
+    "phRange": "7.5 - 8.5",
+    "optimalPh": 7.8,
+    "texture": "Heavy clay",
+    "organicCarbon": "0.50% - 0.75%",
+    "waterRetention": "Very High",
+    "cationExchangeCapacity": "40 - 55 meq/100g",
+    "suitableCrops": [
+      "Cotton",
+      "Maize",
+      "Sorghum",
+      "Chilli",
+      "Sesame",
+      "Bengal Gram"
+    ],
+    "managementTips": "Broadbed and furrow method prevents waterlogging; avoid plowing when excessively wet."
+  },
+  {
+    "id": "sandy_loam",
+    "name": "Sandy Loam Soil",
+    "nameTa": "மணல் சார்ந்த செம்மண்",
+    "description": "Light, warm, fast draining soil with high aeration. Ideal for underground tuber and pod development.",
+    "phRange": "6.0 - 7.0",
+    "optimalPh": 6.5,
+    "texture": "Coarse to fine sand with 10-15% silt",
+    "organicCarbon": "0.30% - 0.50%",
+    "waterRetention": "Low to Moderate",
+    "cationExchangeCapacity": "10 - 18 meq/100g",
+    "suitableCrops": [
+      "Groundnut",
+      "Tapioca",
+      "Sesame",
+      "Vegetables",
+      "Watermelon"
+    ],
+    "managementTips": "Drip irrigation with fertigation; incorporate tank silt or coir pith to retain moisture."
+  },
+  {
+    "id": "laterite",
+    "name": "Laterite Soil",
+    "nameTa": "செம்புறை மண்",
+    "description": "Acidic soil formed under intense monsoon leaching. Rich in iron oxides, low in silica and phosphorus.",
+    "phRange": "4.5 - 6.0",
+    "optimalPh": 5.5,
+    "texture": "Gravelly loam",
+    "organicCarbon": "0.45% - 0.70%",
+    "waterRetention": "Moderate",
+    "cationExchangeCapacity": "12 - 20 meq/100g",
+    "suitableCrops": [
+      "Banana",
+      "Coconut",
+      "Pepper",
+      "Cashew",
+      "Spices"
+    ],
+    "managementTips": "Apply agricultural lime or dolomite 200-400 kg/acre to correct acidity; use Rock Phosphate instead of DAP."
+  }
+]

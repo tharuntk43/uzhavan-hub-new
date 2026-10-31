@@ -1,0 +1,76 @@
+[
+  {
+    "cropId": "paddy_bpt5204",
+    "cropName": "Paddy (Ponni BPT 5204)",
+    "standardRecommendationKgPerAcre": {
+      "N": 50,
+      "P": 25,
+      "K": 25
+    },
+    "fertilizerEquivalents": {
+      "urea": 65,
+      "dap": 54,
+      "mop": 42,
+      "zincSulfate": 10
+    },
+    "splitSchedule": [
+      {
+        "stage": "Basal (Transplanting)",
+        "dapKg": 54,
+        "mopKg": 15,
+        "ureaKg": 0,
+        "zincKg": 10,
+        "notes": "Incorporate during final puddle."
+      },
+      {
+        "stage": "Active Tillering (21 DAT)",
+        "dapKg": 0,
+        "mopKg": 0,
+        "ureaKg": 35,
+        "zincKg": 0,
+        "notes": "Thin water film in field; drain before broadcasting."
+      },
+      {
+        "stage": "Panicle Initiation (50 DAT)",
+        "dapKg": 0,
+        "mopKg": 27,
+        "ureaKg": 30,
+        "zincKg": 0,
+        "notes": "Crucial split for panicle size and grain weight."
+      }
+    ],
+    "organicAlternatives": "Farm Yard Manure 5 tonnes/acre + Daincha green manure incorporated 15 days prior to transplanting."
+  },
+  {
+    "cropId": "groundnut_vri8",
+    "cropName": "Groundnut (VRI 8)",
+    "standardRecommendationKgPerAcre": {
+      "N": 10,
+      "P": 20,
+      "K": 30
+    },
+    "fertilizerEquivalents": {
+      "urea": 0,
+      "dap": 45,
+      "mop": 50,
+      "gypsum": 200
+    },
+    "splitSchedule": [
+      {
+        "stage": "Basal (Sowing)",
+        "dapKg": 45,
+        "mopKg": 25,
+        "gypsumKg": 100,
+        "notes": "Basal gypsum ensures initial root zone calcium."
+      },
+      {
+        "stage": "Pegging Stage (40-45 DAS)",
+        "dapKg": 0,
+        "mopKg": 25,
+        "gypsumKg": 100,
+        "notes": "Top-dress gypsum around plant base and earth up immediately to facilitate pod filling."
+      }
+    ],
+    "organicAlternatives": "Vermicompost 2 tonnes/acre + Bio-fertilizers (Rhizobium + Phosphobacteria seed coating)."
+  }
+]

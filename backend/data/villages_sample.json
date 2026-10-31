@@ -1,0 +1,122 @@
+[
+  {
+    "id": "vil_01",
+    "district": "Madurai",
+    "taluk": "Vadipatti",
+    "village": "Alanganallur",
+    "villageTa": "அலங்காநல்லூர்",
+    "soilPrimary": "red",
+    "canalCommand": false,
+    "groundwaterStatus": "Semi-critical"
+  },
+  {
+    "id": "vil_02",
+    "district": "Madurai",
+    "taluk": "Melur",
+    "village": "Vellalur",
+    "villageTa": "வெள்ளலூர்",
+    "soilPrimary": "red",
+    "canalCommand": true,
+    "groundwaterStatus": "Safe"
+  },
+  {
+    "id": "vil_03",
+    "district": "Thanjavur",
+    "taluk": "Kumbakonam",
+    "village": "Thirunageswaram",
+    "villageTa": "திருநாகேஸ்வரம்",
+    "soilPrimary": "alluvial",
+    "canalCommand": true,
+    "groundwaterStatus": "Abundant"
+  },
+  {
+    "id": "vil_04",
+    "district": "Thanjavur",
+    "taluk": "Papanasam",
+    "village": "Ayyampettai",
+    "villageTa": "அய்யம்பேட்டை",
+    "soilPrimary": "alluvial",
+    "canalCommand": true,
+    "groundwaterStatus": "Abundant"
+  },
+  {
+    "id": "vil_05",
+    "district": "Coimbatore",
+    "taluk": "Pollachi",
+    "village": "Anaimalai",
+    "villageTa": "ஆனைமலை",
+    "soilPrimary": "red",
+    "canalCommand": true,
+    "groundwaterStatus": "Safe"
+  },
+  {
+    "id": "vil_06",
+    "district": "Erode",
+    "taluk": "Bhavani",
+    "village": "Kavindapadi",
+    "villageTa": "கவுந்தப்பாடி",
+    "soilPrimary": "black",
+    "canalCommand": true,
+    "groundwaterStatus": "Safe"
+  },
+  {
+    "id": "vil_07",
+    "district": "Tiruppur",
+    "taluk": "Dharapuram",
+    "village": "Kundadam",
+    "villageTa": "குண்டடம்",
+    "soilPrimary": "red",
+    "canalCommand": false,
+    "groundwaterStatus": "Deficit"
+  },
+  {
+    "id": "vil_08",
+    "district": "Salem",
+    "taluk": "Attur",
+    "village": "Thalaivasal",
+    "villageTa": "தலைவாசல்",
+    "soilPrimary": "red",
+    "canalCommand": false,
+    "groundwaterStatus": "Semi-critical"
+  },
+  {
+    "id": "vil_09",
+    "district": "Tiruchirappalli",
+    "taluk": "Lalgudi",
+    "village": "Pullambadi",
+    "villageTa": "புள்ளம்பாடி",
+    "soilPrimary": "alluvial",
+    "canalCommand": true,
+    "groundwaterStatus": "Safe"
+  },
+  {
+    "id": "vil_10",
+    "district": "Tirunelveli",
+    "taluk": "Ambasamudram",
+    "village": "Kallidaikurichi",
+    "villageTa": "கல்லிடைக்குறிச்சி",
+    "soilPrimary": "alluvial",
+    "canalCommand": true,
+    "groundwaterStatus": "Safe"
+  },
+  {
+    "id": "vil_11",
+    "district": "Dindigul",
+    "taluk": "Oddanchatram",
+    "village": "Kallimandhayam",
+    "villageTa": "கள்ளிமந்தையம்",
+    "soilPrimary": "red",
+    "canalCommand": false,
+    "groundwaterStatus": "Deficit"
+  },
+  {
+    "id": "vil_12",
+    "district": "Theni",
+    "taluk": "Periyakulam",
+    "village": "Vadaveeranaickenpatty",
+    "villageTa": "வடவீரநாயக்கன்பட்டி",
+    "soilPrimary": "red",
+    "canalCommand": true,
+    "groundwaterStatus": "Safe"
+  }
+]

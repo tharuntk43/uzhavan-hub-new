@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="50%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#22c55e" stroke-width="6" opacity="0.4" stroke-dasharray="16 12"/>
+  
+  <!-- Center Sprout / Wheat Motif -->
+  <path d="M256 390 V 210" stroke="#bbf7d0" stroke-width="16" stroke-linecap="round"/>
+  
+  <!-- Left Leaf -->
+  <path d="M256 310 C 200 310 160 250 170 190 C 230 190 256 260 256 310 Z" fill="#4ade80"/>
+  <!-- Right Leaf -->
+  <path d="M256 260 C 312 260 352 200 342 140 C 282 140 256 210 256 260 Z" fill="#22c55e"/>
+  
+  <!-- Wheat Head / Golden Grain -->
+  <path d="M256 210 C 230 170 240 120 256 90 C 272 120 282 170 256 210 Z" fill="url(#gold)"/>
+  <circle cx="256" cy="90" r="14" fill="#fef08a"/>
+  
+  <!-- Small Tech Circuit Dot -->
+  <circle cx="170" cy="190" r="8" fill="#ffffff"/>
+  <circle cx="342" cy="140" r="8" fill="#ffffff"/>
+  <line x1="170" y1="190" x2="140" y2="190" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="342" y1="140" x2="372" y2="140" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,149 @@
+{
+  "paddy_samba": {
+    "cropName": "Samba Paddy (140 Days)",
+    "cropNameTa": "சம்பா நெல் பயிர் நாட்காட்டி",
+    "totalWeeks": 20,
+    "stages": [
+      {
+        "week": 1,
+        "days": "Day 0 - 7",
+        "stageName": "Summer Puddling & Land Preparation",
+        "stageNameTa": "நிலம் தயாரித்தல் & உழவு",
+        "tasks": [
+          {
+            "id": "t1_1",
+            "task": "Plow field twice with disc plow and level bunds.",
+            "category": "Land Prep",
+            "mandatory": true
+          },
+          {
+            "id": "t1_2",
+            "task": "Incorporate Daincha / Sesbania green manure (5 tonnes/acre).",
+            "category": "Nutrient",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "days": "Day 8 - 14",
+        "stageName": "Basal Dosing & Nursery Sowing",
+        "stageNameTa": "அடி உரம் & நாற்றங்கால் தயாரிப்பு",
+        "tasks": [
+          {
+            "id": "t2_1",
+            "task": "Soak certified seeds with Pseudomonas fluorescens (10g/kg).",
+            "category": "Seed Treatment",
+            "mandatory": true
+          },
+          {
+            "id": "t2_2",
+            "task": "Broadcast DAP 45kg + MOP 15kg + Zinc Sulfate 10kg as basal dose.",
+            "category": "Fertilizer",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "days": "Day 21 - 28",
+        "stageName": "Transplanting / DSR Seeding",
+        "stageNameTa": "நாற்று நடுதல் / நேரடி விதைப்பு",
+        "tasks": [
+          {
+            "id": "t4_1",
+            "task": "Transplant 18-21 day old seedlings at 2-3 seedlings per hill.",
+            "category": "Transplanting",
+            "mandatory": true
+          },
+          {
+            "id": "t4_2",
+            "task": "Maintain thin water layer of 2 cm in field.",
+            "category": "Irrigation",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "days": "Day 35 - 42",
+        "stageName": "Active Tillering & First Top-Dress",
+        "stageNameTa": "தூர்கட்டும் பருவம் & முதல் மேலுரம்",
+        "tasks": [
+          {
+            "id": "t6_1",
+            "task": "Drain excess water and broadcast Urea 25kg/acre.",
+            "category": "Fertilizer",
+            "mandatory": true
+          },
+          {
+            "id": "t6_2",
+            "task": "Operate cono-weeder between rows to aerate root bed.",
+            "category": "Weeding",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "days": "Day 56 - 63",
+        "stageName": "Panicle Initiation (Booting)",
+        "stageNameTa": "கதிர் உருவாகும் பருவம்",
+        "tasks": [
+          {
+            "id": "t9_1",
+            "task": "Apply second top-dress: Urea 15kg + MOP 10kg/acre.",
+            "category": "Fertilizer",
+            "mandatory": true
+          },
+          {
+            "id": "t9_2",
+            "task": "Inspect flag leaves for blast disease spots; spray Tricyclazole if spotted.",
+            "category": "Pest Surveillance",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "week": 14,
+        "days": "Day 91 - 98",
+        "stageName": "Flowering & Milk Stage",
+        "stageNameTa": "பூக்கும் மற்றும் பால் பிடிக்கும் பருவம்",
+        "tasks": [
+          {
+            "id": "t14_1",
+            "task": "Maintain continuous 5 cm standing water; do not allow field to dry.",
+            "category": "Irrigation",
+            "mandatory": true
+          },
+          {
+            "id": "t14_2",
+            "task": "Foliar spray of 1% Potassium Nitrate (KNO3) for bold grain filling.",
+            "category": "Nutrient",
+            "mandatory": false
+          }
+        ]
+      },
+      {
+        "week": 19,
+        "days": "Day 126 - 135",
+        "stageName": "De-watering & Harvest Preparation",
+        "stageNameTa": "தண்ணீர் வடித்தல் & அறுவடை ஆயத்தம்",
+        "tasks": [
+          {
+            "id": "t19_1",
+            "task": "Completely drain field 10-12 days prior to combine harvester entry.",
+            "category": "Harvest Prep",
+            "mandatory": true
+          },
+          {
+            "id": "t19_2",
+            "task": "Book combine harvester and reserve drying yard floor.",
+            "category": "Logistics",
+            "mandatory": true
+          }
+        ]
+      }
+    ]
+  }
+}

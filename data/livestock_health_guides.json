@@ -1,0 +1,83 @@
+[
+  {
+    "species": "Dairy Cow (கறவை மாடு)",
+    "icon": "🐄",
+    "commonConditions": [
+      {
+        "disease": "Mastitis (மடி நோய்)",
+        "symptoms": "Swelling, heat and tenderness in udder, milk appears clotted or watery with blood flakes.",
+        "firstAid": "Empty affected quarter gently; cold compress on swollen udder; avoid milking onto floor.",
+        "prevention": "Post-milking teat dipping in 0.5% povidone-iodine; maintain clean dry stall bedding.",
+        "vetUrgency": "High (Administer intramammary antibiotics under qualified veterinary guidance within 12 hours)."
+      },
+      {
+        "disease": "Foot and Mouth Disease - FMD (கோமாரி நோய்)",
+        "symptoms": "High fever, excessive frothy salivation, blisters on tongue, dental pad and interdigital cleft of feet.",
+        "firstAid": "Wash mouth with 1% potassium permanganate or sodium bicarbonate solution; apply boro-glycerine to ulcers.",
+        "prevention": "Bi-annual vaccination under TN Animal Husbandry FMD-CP schedule (March & September).",
+        "vetUrgency": "Urgent Emergency (Report immediately to local Veterinary Dispensary or dial 1962)."
+      },
+      {
+        "disease": "Bloat / Tympany (வயிற்று உப்புசம்)",
+        "symptoms": "Sudden swelling of left flank, restless behavior, rapid breathing and kicking at belly.",
+        "firstAid": "Keep animal standing with front quarters elevated; drench with 500ml edible groundnut/gingerly oil with 30ml turpentine oil.",
+        "prevention": "Avoid sudden feeding of lush leguminous green fodder (Lucerne/Berseem) without dry roughage.",
+        "vetUrgency": "Immediate Emergency (Risk of asphyxiation)."
+      }
+    ],
+    "vaccinationCalendar": [
+      {
+        "vaccine": "FMD Vaccine",
+        "age": "4 months & above",
+        "frequency": "Every 6 months (Pre-monsoon)",
+        "department": "Free at Govt Vet Hospitals"
+      },
+      {
+        "vaccine": "Black Quarter (BQ)",
+        "age": "6 months & above",
+        "frequency": "Annual (May - June)",
+        "department": "Free at Govt Vet Hospitals"
+      },
+      {
+        "vaccine": "Haemorrhagic Septicaemia (HS)",
+        "age": "6 months & above",
+        "frequency": "Annual (August - September)",
+        "department": "Free at Govt Vet Hospitals"
+      }
+    ]
+  },
+  {
+    "species": "Goat & Sheep (ஆடு மற்றும் செம்மறி)",
+    "icon": "🐐",
+    "commonConditions": [
+      {
+        "disease": "Peste des Petits Ruminants - PPR (ஆட்டுக்கொள்ளை நோய்)",
+        "symptoms": "Sudden high fever, discharges from eyes and nose, necrotic lesions in mouth, profuse watery diarrhea.",
+        "firstAid": "Isolate sick goats; administer oral electrolyte fluids to combat dehydration; feed soft gruel.",
+        "prevention": "PPR vaccination gives immunity for 3 years; vaccinate all kids above 3 months.",
+        "vetUrgency": "High (Consult veterinarian immediately)."
+      },
+      {
+        "disease": "Enterotoxaemia / Pulpy Kidney (துள்ளு நோய்)",
+        "symptoms": "Sudden death in fast-growing lambs, neurological staggering, convulsions before death.",
+        "firstAid": "Immediate veterinary drenching with anti-toxin serum.",
+        "prevention": "Vaccinate with ET vaccine 15 days before onset of monsoon rains.",
+        "vetUrgency": "Emergency."
+      }
+    ],
+    "vaccinationCalendar": [
+      {
+        "vaccine": "PPR Vaccine",
+        "age": "3 months",
+        "frequency": "Once in 3 years",
+        "department": "Govt Animal Husbandry"
+      },
+      {
+        "vaccine": "ET Vaccine",
+        "age": "3 months",
+        "frequency": "Annual (Pre-monsoon)",
+        "department": "Govt Animal Husbandry"
+      }
+    ]
+  }
+]

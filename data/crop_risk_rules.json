@@ -1,0 +1,46 @@
+[
+  {
+    "id": "risk_heavy_rain_tillering",
+    "category": "Weather Hazard",
+    "triggerCondition": "Rain probability > 60% and Crop Stage in ['Transplanting', 'Active Tillering']",
+    "severity": "Medium",
+    "title": "Submersion and Nutrient Leaching Risk",
+    "titleTa": "நீர்மூழ்கல் மற்றும் உரக் கரைவு ஆபத்து",
+    "description": "Heavy rainfall during tillering flushes soluble nitrogen fertilizer into drainage canals.",
+    "recommendedAction": "Withhold chemical top-dressing until showers cease; open perimeter field bunds to discharge excess runoff.",
+    "escalationContact": "Contact Block Assistant Director of Agriculture (ADA) for drainage gate coordination."
+  },
+  {
+    "id": "risk_blast_humidity",
+    "category": "Pest & Disease",
+    "triggerCondition": "Humidity > 75% and Temperature between 22°C and 28°C and Crop == 'Paddy'",
+    "severity": "High",
+    "title": "Paddy Blast Disease Threat (Pyricularia oryzae)",
+    "titleTa": "நெல் இலைக் கருகல் நோய் அபாயம்",
+    "description": "Cool night dew coupled with daytime warmth triggers blast spore germination on leaf surfaces.",
+    "recommendedAction": "Soak seed paddy in Pseudomonas fluorescens (10g/kg). For standing crop, spray Tricyclazole 75% WP (0.6g/L) or Neem Seed Kernel Extract (5%).",
+    "escalationContact": "TNAU Agronomy Clinic / KVK Thanjavur: 04362-267355"
+  },
+  {
+    "id": "risk_drought_water_deficit",
+    "category": "Water Deficit",
+    "triggerCondition": "Rain probability < 20% for 14 days and Water Availability == 'Seasonal/Deficit'",
+    "severity": "High",
+    "title": "Terminal Moisture Stress Alert",
+    "titleTa": "வறட்சி மற்றும் தீவிர நீர் பற்றாக்குறை",
+    "description": "Panicle desiccation occurs if field drys completely during flowering or milk stage.",
+    "recommendedAction": "Adopt alternate wetting and drying (AWD); apply potassium chloride (1% foliar spray) to enhance stomatal closure and drought resistance.",
+    "escalationContact": "Local PWD Water Resources Department canal schedule desk."
+  },
+  {
+    "id": "risk_fall_armyworm_maize",
+    "category": "Pest & Disease",
+    "triggerCondition": "Crop == 'Maize' and DaysAfterSowing between 15 and 45",
+    "severity": "High",
+    "title": "Fall Armyworm (Spodoptera frugiperda) Surveillance",
+    "titleTa": "படைப்புழு தாக்குதல் கண்காணிப்பு",
+    "description": "Larvae bore into central whorls leaving characteristic ragged holes and sawdust-like frass.",
+    "recommendedAction": "Handpick egg masses; install 5 pheromone traps/acre; apply sand-lime mix (9:1) into central whorls or spray Chlorantraniliprole 18.5% SC (0.4ml/L).",
+    "escalationContact": "TNAU Directorate of Extension Education: 0422-6611233"
+  }
+]

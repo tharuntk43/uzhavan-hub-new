@@ -1,0 +1,21 @@
+{
+  "name": "Uzhavan Hub (உழவன் ஹப்) — Smart Agriculture",
+  "short_name": "Uzhavan Hub",
+  "description": "AI-Powered Smart Agriculture and Decision Platform for Tamil Nadu Farmers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eaffee",
+  "theme_color": "#003b1b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["agriculture", "business", "utilities", "productivity"],
+  "lang": "ta-IN",
+  "dir": "ltr"
+}

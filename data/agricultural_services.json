@@ -1,0 +1,51 @@
+[
+  {
+    "id": "kvk_thanjavur",
+    "name": "ICAR - Krishi Vigyan Kendra, Thanjavur",
+    "nameTa": "வேளாண் அறிவியல் நிலையம், தஞ்சாவூர்",
+    "type": "Krishi Vigyan Kendra (KVK)",
+    "district": "Thanjavur",
+    "address": "Soil Salinity Research Station Campus, Needamangalam / Thanjavur",
+    "phone": "04362-267355",
+    "servicesOffered": [
+      "Soil & Water Testing",
+      "Certified Breeder Seeds",
+      "Pest Diagnostic Clinic",
+      "Free Farmer Training"
+    ],
+    "latitude": 10.7867,
+    "longitude": 79.1378
+  },
+  {
+    "id": "tnau_soil_lab_madurai",
+    "name": "Agricultural College & Research Institute (TNAU) Soil Lab",
+    "nameTa": "தமிழ்நாடு வேளாண் பல்கலைக்கழக மண் பரிசோதனை ஆய்வகம், மதுரை",
+    "type": "TNAU Research Station & Soil Lab",
+    "district": "Madurai",
+    "address": "Othakadai, Madurai - 625104",
+    "phone": "0452-2422956",
+    "servicesOffered": [
+      "Comprehensive NPK Chromatography",
+      "Micronutrient Profiling",
+      "Soil Health Card Generation"
+    ],
+    "latitude": 9.9687,
+    "longitude": 78.1882
+  },
+  {
+    "id": "fpo_cauvery_delta",
+    "name": "Cauvery Delta Traditional Paddy Farmer Producer Co.",
+    "nameTa": "காவிரி டெல்டா பாரம்பரிய விவசாயிகள் உற்பத்தியாளர் நிறுவனம்",
+    "type": "Farmer Producer Organization (FPO)",
+    "district": "Thanjavur",
+    "address": "Main Road, Papanasam - 614205",
+    "phone": "04362-221144",
+    "servicesOffered": [
+      "Collective Paddy Procurement at +₹60/Qtl over APMC",
+      "Bulk Fertilizer Supply",
+      "Drone Spraying Service"
+    ],
+    "latitude": 10.9234,
+    "longitude": 79.2812
+  }
+]

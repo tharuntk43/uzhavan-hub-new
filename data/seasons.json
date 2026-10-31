@@ -1,0 +1,72 @@
+[
+  {
+    "id": "kuruvai",
+    "name": "Kuruvai (குறுவை)",
+    "tamilName": "குறுவை பருவம்",
+    "sowingMonths": "June - July",
+    "harvestMonths": "September - October",
+    "rainfallPattern": "South-West Monsoon (Initial light showers)",
+    "irrigationReliance": "Heavy Canal / Borewell",
+    "tempRange": "28°C - 36°C",
+    "primaryCrops": [
+      "Short-duration Paddy (ADT 43, ASD 16)",
+      "Black Gram",
+      "Green Gram",
+      "Sesame"
+    ],
+    "notes": "Short duration season (105-120 days) traditionally dependent on Mettur Dam water release."
+  },
+  {
+    "id": "samba",
+    "name": "Samba / Thaladi (சம்பா / தாளடி)",
+    "tamilName": "சம்பா பருவம்",
+    "sowingMonths": "August - November",
+    "harvestMonths": "December - February",
+    "rainfallPattern": "North-East Monsoon (Intense rain events)",
+    "irrigationReliance": "Canal + Rainfall",
+    "tempRange": "22°C - 30°C",
+    "primaryCrops": [
+      "Medium/Long-duration Paddy (BPT 5204, CR 1009 Sub 1)",
+      "Cotton",
+      "Maize",
+      "Millets"
+    ],
+    "notes": "Main agricultural season across Tamil Nadu covering over 60% of total food grain production."
+  },
+  {
+    "id": "navarai",
+    "name": "Navarai / Kodai (நவரை / கோடை)",
+    "tamilName": "நவரை / கோடை பருவம்",
+    "sowingMonths": "December - January",
+    "harvestMonths": "March - April",
+    "rainfallPattern": "Dry season with winter dew",
+    "irrigationReliance": "Tube wells / Borewells only",
+    "tempRange": "24°C - 34°C",
+    "primaryCrops": [
+      "Rice Fallow Pulses (Black Gram VBN 8)",
+      "Sesame",
+      "Groundnut",
+      "Watermelon",
+      "Millets"
+    ],
+    "notes": "High solar radiation yields high photosynthesis; excellent for relay pulse cropping."
+  },
+  {
+    "id": "zaid_summer",
+    "name": "Summer Zaid (சித்திரை பட்டம்)",
+    "tamilName": "கோடை / சித்திரை பட்டம்",
+    "sowingMonths": "March - May",
+    "harvestMonths": "June - July",
+    "rainfallPattern": "Pre-monsoon summer thunderstorms",
+    "irrigationReliance": "Assured groundwater",
+    "tempRange": "30°C - 40°C",
+    "primaryCrops": [
+      "Groundnut (Summer)",
+      "Sesame (Gingelly)",
+      "Barnyard Millet",
+      "Fodder Sorghum",
+      "Vegetables"
+    ],
+    "notes": "Requires high heat-tolerant varieties; mulch with crop residues to conserve water."
+  }
+]

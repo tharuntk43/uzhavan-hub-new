@@ -1,0 +1,98 @@
+[
+  {
+    "id": "scheme_pm_kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "nameTa": "பி.எம் கிசான் திட்டம்",
+    "category": "Direct Income Support",
+    "sponsor": "Central Government",
+    "benefit": "₹6,000 per year paid in three equal instalments of ₹2,000 directly into farmer bank accounts via DBT.",
+    "eligibility": "All landholding farmer families having cultivable landholding in their names (subject to exclusion criteria for institutional landowners).",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Land Patta / Chitta",
+      "Bank Passbook linked to Aadhaar",
+      "Active Mobile Number"
+    ],
+    "applicationProcess": "Apply online at pmkisan.gov.in or through Village E-Seva Centre (CSC) with land revenue records.",
+    "officialUrl": "https://pmkisan.gov.in",
+    "lastVerifiedDate": "2026-10-01",
+    "isActive": true
+  },
+  {
+    "id": "scheme_pmfby",
+    "name": "PMFBY (Pradhan Mantri Fasal Bima Yojana)",
+    "nameTa": "பயிர் காப்பீட்டுத் திட்டம் (PMFBY)",
+    "category": "Crop Insurance",
+    "sponsor": "Central & State Joint",
+    "benefit": "Comprehensive insurance coverage against non-preventable natural risks (drought, flood, unseasonal rain, pests). Farmers pay low premium (1.5% Rabi, 2% Kharif, 5% Commercial).",
+    "eligibility": "All farmers including sharecroppers and tenant farmers growing notified crops in notified areas.",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Adangal / Sowing Certificate from VAO",
+      "Bank Passbook",
+      "Land Ownership / Lease Agreement"
+    ],
+    "applicationProcess": "Enrol through Primary Agricultural Cooperative Credit Societies (PACCS), commercial banks, or Common Service Centres before cut-off date.",
+    "officialUrl": "https://pmfby.gov.in",
+    "lastVerifiedDate": "2026-10-01",
+    "isActive": true
+  },
+  {
+    "id": "scheme_tn_micro_irrigation",
+    "name": "Tamil Nadu Micro-Irrigation Scheme (Drip & Sprinkler)",
+    "nameTa": "நுண்ணீர்ப் பாசன மானியத் திட்டம்",
+    "category": "Irrigation Infrastructure",
+    "sponsor": "Government of Tamil Nadu",
+    "benefit": "100% subsidy for Small & Marginal Farmers (up to 5 acres); 75% subsidy for other farmers for installing drip/sprinkler systems.",
+    "eligibility": "Farmers with valid land ownership documents and an assured groundwater or surface water source.",
+    "documentsRequired": [
+      "Patta / Chitta",
+      "FMB Sketch",
+      "Aadhaar Card",
+      "Small/Marginal Farmer Certificate from Tahsildar",
+      "Water & Electricity Availability Proof"
+    ],
+    "applicationProcess": "Register on the TN Horticulture Department portal (tnhorticulture.tn.gov.in/mis) or submit application to Block Assistant Director of Horticulture.",
+    "officialUrl": "https://tnhorticulture.tn.gov.in",
+    "lastVerifiedDate": "2026-09-15",
+    "isActive": true
+  },
+  {
+    "id": "scheme_pm_kusum_solar",
+    "name": "PM-KUSUM Component B (Solar Agricultural Pumps)",
+    "nameTa": "சூரிய சக்தி விவசாய பம்புசெட் திட்டம்",
+    "category": "Renewable Energy",
+    "sponsor": "Central & State Ministry of New and Renewable Energy",
+    "benefit": "Up to 70% subsidy (30% Central + 40% State) for installing standalone solar agricultural pumps of 5HP, 7.5HP, and 10HP.",
+    "eligibility": "Individual farmers, water user associations, and farmer producer groups having arable land with borewell/open well but lacking grid power connection.",
+    "documentsRequired": [
+      "Patta / Chitta",
+      "Aadhaar Card",
+      "Borewell Yield Certificate",
+      "Bank Account Details",
+      "Passport Photos"
+    ],
+    "applicationProcess": "Apply through Tamil Nadu Energy Development Agency (TEDA) or Agriculture Engineering Department.",
+    "officialUrl": "https://teda.in",
+    "lastVerifiedDate": "2026-09-20",
+    "isActive": true
+  },
+  {
+    "id": "scheme_kaviyadp",
+    "name": "Kalaignarin All Village Integrated Agriculture Development Programme",
+    "nameTa": "கலைஞரின் அனைத்து கிராம ஒருங்கிணைந்த வேளாண் வளர்ச்சி திட்டம்",
+    "category": "Integrated Village Development",
+    "sponsor": "Government of Tamil Nadu",
+    "benefit": "Distribution of certified quality seeds, fruit saplings, battery sprayers, drip subsidy, and reclamation of fallow lands in selected village panchayats.",
+    "eligibility": "Farmers resident in the village panchayats selected for the current fiscal year.",
+    "documentsRequired": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Land Records"
+    ],
+    "applicationProcess": "Enroll at the special gram sabha camp organized by the Agricultural Department.",
+    "officialUrl": "https://agritech.tnau.ac.in",
+    "lastVerifiedDate": "2026-08-30",
+    "isActive": true
+  }
+]

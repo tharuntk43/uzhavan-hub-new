@@ -1,0 +1,227 @@
+[
+  {
+    "district": "Thanjavur",
+    "temperature": 29.5,
+    "tempMin": 24.0,
+    "tempMax": 32.5,
+    "humidity": 78,
+    "rainProbability": 65,
+    "windSpeedKm": 14,
+    "uvIndex": 7,
+    "condition": "Scattered Monsoon Showers",
+    "conditionTa": "பருவமழை மிதமான தூறல்",
+    "activeAdvisories": [
+      "Moderate to heavy showers expected over Vadavaru basin tomorrow. Postpone chemical spray and urea top-dressing by 48 hours.",
+      "Inspect drainage channels in low-lying Kuruvai and Samba fields to prevent submersion of tillering nodes.",
+      "High humidity (78%) creates favorable microclimate for blast disease in BPT 5204. Schedule bio-prophylactic spray once skies clear."
+    ],
+    "forecast7Day": [
+      {
+        "day": "Wed",
+        "date": "Oct 28",
+        "temp": "31° / 24°",
+        "rain": "65%",
+        "icon": "rain",
+        "advisory": "Drain water inlets"
+      },
+      {
+        "day": "Thu",
+        "date": "Oct 29",
+        "temp": "30° / 23°",
+        "rain": "75%",
+        "icon": "thunder",
+        "advisory": "Postpone urea top-dress"
+      },
+      {
+        "day": "Fri",
+        "date": "Oct 30",
+        "temp": "29° / 23°",
+        "rain": "50%",
+        "icon": "rain",
+        "advisory": "Inspect bunds"
+      },
+      {
+        "day": "Sat",
+        "date": "Oct 31",
+        "temp": "32° / 24°",
+        "rain": "25%",
+        "icon": "partly_cloudy",
+        "advisory": "Favorable for spraying"
+      },
+      {
+        "day": "Sun",
+        "date": "Nov 01",
+        "temp": "33° / 25°",
+        "rain": "15%",
+        "icon": "sunny",
+        "advisory": "Resume intercultural work"
+      },
+      {
+        "day": "Mon",
+        "date": "Nov 02",
+        "temp": "32° / 24°",
+        "rain": "20%",
+        "icon": "sunny",
+        "advisory": "Irrigate field as required"
+      },
+      {
+        "day": "Tue",
+        "date": "Nov 03",
+        "temp": "31° / 24°",
+        "rain": "30%",
+        "icon": "partly_cloudy",
+        "advisory": "Monitor for leaf folder"
+      }
+    ]
+  },
+  {
+    "district": "Madurai",
+    "temperature": 32.0,
+    "tempMin": 25.0,
+    "tempMax": 34.5,
+    "humidity": 62,
+    "rainProbability": 25,
+    "windSpeedKm": 11,
+    "uvIndex": 8,
+    "condition": "Warm with Clear Skies",
+    "conditionTa": "வெப்பமான தெளிவான வானிலை",
+    "activeAdvisories": [
+      "Favorable clear weather for cotton weeding and intercultural hoeing in Vadipatti and Usilampatti blocks.",
+      "Soil moisture in black soils declining: provide light furrow irrigation for vegetative maize and cotton.",
+      "Install pheromone traps (5/acre) to monitor pink bollworm moth flights."
+    ],
+    "forecast7Day": [
+      {
+        "day": "Wed",
+        "date": "Oct 28",
+        "temp": "34° / 25°",
+        "rain": "25%",
+        "icon": "sunny",
+        "advisory": "Intercultural hoeing"
+      },
+      {
+        "day": "Thu",
+        "date": "Oct 29",
+        "temp": "34° / 25°",
+        "rain": "20%",
+        "icon": "sunny",
+        "advisory": "Good for cotton picking"
+      },
+      {
+        "day": "Fri",
+        "date": "Oct 30",
+        "temp": "33° / 24°",
+        "rain": "35%",
+        "icon": "partly_cloudy",
+        "advisory": "Light furrow irrigation"
+      },
+      {
+        "day": "Sat",
+        "date": "Oct 31",
+        "temp": "32° / 24°",
+        "rain": "40%",
+        "icon": "rain",
+        "advisory": "Watch for leaf curl"
+      },
+      {
+        "day": "Sun",
+        "date": "Nov 01",
+        "temp": "33° / 24°",
+        "rain": "30%",
+        "icon": "partly_cloudy",
+        "advisory": "Apply DAP foliar spray"
+      },
+      {
+        "day": "Mon",
+        "date": "Nov 02",
+        "temp": "34° / 25°",
+        "rain": "15%",
+        "icon": "sunny",
+        "advisory": "Irrigate orchards"
+      },
+      {
+        "day": "Tue",
+        "date": "Nov 03",
+        "temp": "35° / 25°",
+        "rain": "10%",
+        "icon": "sunny",
+        "advisory": "Clear weather continues"
+      }
+    ]
+  },
+  {
+    "district": "Coimbatore",
+    "temperature": 27.5,
+    "tempMin": 21.0,
+    "tempMax": 30.0,
+    "humidity": 70,
+    "rainProbability": 40,
+    "windSpeedKm": 16,
+    "uvIndex": 7,
+    "condition": "Cool Breezy Overcast",
+    "conditionTa": "குளிர்ந்த காற்றுடன் மேகமூட்டம்",
+    "activeAdvisories": [
+      "Western Ghats breeze active: check tie-ups in banana orchards to prevent stem lodging.",
+      "Vegetable farmers in Pollachi: spray neem seed kernel extract (5%) to repel thrips and whiteflies.",
+      "Ensure rainwater harvesting silt traps are cleaned before weekend showers."
+    ],
+    "forecast7Day": [
+      {
+        "day": "Wed",
+        "date": "Oct 28",
+        "temp": "29° / 21°",
+        "rain": "40%",
+        "icon": "partly_cloudy",
+        "advisory": "Tie up banana stems"
+      },
+      {
+        "day": "Thu",
+        "date": "Oct 29",
+        "temp": "28° / 21°",
+        "rain": "45%",
+        "icon": "rain",
+        "advisory": "Neem oil spray"
+      },
+      {
+        "day": "Fri",
+        "date": "Oct 30",
+        "temp": "28° / 20°",
+        "rain": "35%",
+        "icon": "partly_cloudy",
+        "advisory": "Clean silt traps"
+      },
+      {
+        "day": "Sat",
+        "date": "Oct 31",
+        "temp": "30° / 21°",
+        "rain": "20%",
+        "icon": "sunny",
+        "advisory": "Good for harvesting"
+      },
+      {
+        "day": "Sun",
+        "date": "Nov 01",
+        "temp": "30° / 22°",
+        "rain": "20%",
+        "icon": "sunny",
+        "advisory": "Irrigate coconut palms"
+      },
+      {
+        "day": "Mon",
+        "date": "Nov 02",
+        "temp": "29° / 21°",
+        "rain": "30%",
+        "icon": "partly_cloudy",
+        "advisory": "Check drip filters"
+      },
+      {
+        "day": "Tue",
+        "date": "Nov 03",
+        "temp": "29° / 21°",
+        "rain": "35%",
+        "icon": "partly_cloudy",
+        "advisory": "Normal agronomy"
+      }
+    ]
+  }
+]

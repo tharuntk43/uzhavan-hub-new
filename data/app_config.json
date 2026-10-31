@@ -1,0 +1,30 @@
+{
+  "appName": "Uzhavan Hub",
+  "appNameTa": "உழவன் ஹப்",
+  "tagline": "AI-Powered Smart Agriculture Platform for Tamil Nadu Farmers",
+  "taglineTa": "தமிழ்நாடு விவசாயிகளுக்கான ஸ்மார்ட் டிஜிட்டல் வேளாண் தளம்",
+  "version": "2.4.0",
+  "themeColors": {
+    "primary": "#14532D",
+    "primaryContainer": "#166534",
+    "leafGreen": "#4D7C0F",
+    "sageGreen": "#E8F2E8",
+    "soilBrown": "#795548",
+    "deepBrown": "#5D4037",
+    "soilBeige": "#F3E9D8",
+    "harvestGold": "#D4A72C",
+    "canvas": "#F8F7F0"
+  },
+  "tollFreeLines": {
+    "kisanCallCentre": "1800-180-1551",
+    "animalAmbulance": "1962",
+    "uzhavanHelpline": "1800-FARM-HUB"
+  },
+  "supportedLanguages": [
+    "en",
+    "ta"
+  ],
+  "demonstrationNotice": "Demonstration Prototype. Agronomic calculations and market benchmarks are calibrated for testing and should be verified with local agricultural extension officers.",
+  "supportedDistrictsCount": 38,
+  "catalogCropsCount": 18
+}

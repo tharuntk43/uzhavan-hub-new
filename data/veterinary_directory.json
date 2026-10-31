@@ -1,0 +1,52 @@
+[
+  {
+    "id": "vet_thanjavur_polyclinic",
+    "name": "District Veterinary Polyclinic, Thanjavur",
+    "nameTa": "மாவட்ட கால்நடை மருத்துவமனை, தஞ்சாவூர்",
+    "district": "Thanjavur",
+    "address": "Medical College Road, Thanjavur - 613007",
+    "phone": "04362-230488",
+    "emergencyHotline": "1962 (Toll Free Animal Ambulance)",
+    "facilities": [
+      "24/7 Casualty",
+      "Mobile X-Ray",
+      "Ultrasound",
+      "Operation Theatre",
+      "Artificial Insemination"
+    ],
+    "openHours": "24 Hours Open (Emergency Service)",
+    "verified": true
+  },
+  {
+    "id": "vet_madurai_polyclinic",
+    "name": "Veterinary Polyclinic, Madurai Central",
+    "nameTa": "கால்நடை மருத்துவமனை, மதுரை",
+    "district": "Madurai",
+    "address": "Thallakulam, Madurai - 625002",
+    "phone": "0452-2531234",
+    "emergencyHotline": "1962",
+    "facilities": [
+      "Emergency Surgical Unit",
+      "Clinical Pathology Lab",
+      "Inpatient Ward"
+    ],
+    "openHours": "8:00 AM - 8:00 PM (24/7 on-call)",
+    "verified": true
+  },
+  {
+    "id": "vet_coimbatore_hospital",
+    "name": "Veterinary Hospital & Referral Clinic, Coimbatore",
+    "nameTa": "கால்நடை மருத்துவமனை, கோயம்புத்தூர்",
+    "district": "Coimbatore",
+    "address": "Cowley Brown Road, R.S. Puram, Coimbatore - 641002",
+    "phone": "0422-2543210",
+    "emergencyHotline": "1962",
+    "facilities": [
+      "Large Animal Surgery",
+      "Diagnostic Sonography",
+      "Free Anti-Rabies"
+    ],
+    "openHours": "24 Hours Emergency",
+    "verified": true
+  }
+]

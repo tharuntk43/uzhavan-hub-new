@@ -1,0 +1,234 @@
+{
+  "brand": {
+    "name": "Uzhavan Hub",
+    "nameTa": "உழவன் ஹப்",
+    "tagline": "Smart Farming. Better Decisions. Higher Yields.",
+    "taglineTa": "சிறந்த விவசாயம். சரியான முடிவுகள். அதிக விளைச்சல்.",
+    "sub": "Your trusted partner in smart agriculture and sustainable farming."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "backToDashboard": "Back to Dashboard",
+    "addPlot": "Add Plot",
+    "switchPlot": "Switch Plot"
+  },
+  "landing": {
+    "headline": "Grow Better. Earn Better.",
+    "subheadline": "One intelligent platform to manage your farm, understand your land, access agricultural services, and make informed farming decisions.",
+    "getStarted": "Get Started",
+    "exploreFeatures": "Explore Features",
+    "welcomeBack": "Welcome Back to Uzhavan Hub",
+    "handwrittenTag": "Better Farming Together",
+    "benefits": {
+      "cropGuidance": "Crop Guidance",
+      "weatherAlerts": "Weather Alerts",
+      "marketInfo": "Market Information",
+      "farmManagement": "Farm Management"
+    }
+  },
+  "login": {
+    "title": "Welcome Back, Farmer!",
+    "sub": "Access your farm dashboard, land records, and smart advisory services.",
+    "identifierLabel": "Email or Mobile Number",
+    "identifierPlaceholder": "Enter email or 10-digit mobile number",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "submitBtn": "Login to Farm Dashboard",
+    "loggingIn": "Signing in...",
+    "or": "OR",
+    "tryDemo": "Try Demo Accounts",
+    "demoDesc": "Explore the platform with verified sample farmer accounts",
+    "demoMurugan": "Murugan P. (Madurai - 3.5 Ac)",
+    "demoAnitha": "Anitha R. (Thanjavur - 5.2 Ac)",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create an account",
+    "validationError": "Please enter a valid email or 10-digit Indian mobile number."
+  },
+  "onboarding": {
+    "step1Title": "Your Details",
+    "step1Sub": "Personal details and secure account credentials",
+    "step2Title": "Farm Location",
+    "step2Sub": "Device geolocation or select your district & village",
+    "step3Title": "Your Land",
+    "step3Sub": "Plots, area conversion (acres/cents/ha), soil & water source",
+    "step4Title": "Farming Preferences",
+    "step4Sub": "Main crops, season, budget & livestock integration",
+    "step5Title": "Review & Finish",
+    "step5Sub": "Verify your profile and land plots before saving",
+    "fullName": "Full Name",
+    "mobileNumber": "10-Digit Mobile Number",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "preferredLanguage": "Preferred Language",
+    "district": "District",
+    "village": "Village / Town",
+    "detectLocationBtn": "Detect My Farm Location (GPS)",
+    "detecting": "Detecting GPS location...",
+    "locationDetected": "Location detected successfully!",
+    "locationDenied": "GPS permission was not granted. Please select your district and village below.",
+    "manualLocation": "Or Enter Location Manually",
+    "landTenure": "Land Tenure Status",
+    "ownLand": "I own land",
+    "rentLand": "I rent land",
+    "familyLand": "I cultivate family or shared land",
+    "noLand": "I do not currently have land",
+    "plotName": "Plot Name",
+    "areaSize": "Area Size",
+    "unit": "Unit",
+    "acres": "Acres",
+    "cents": "Cents",
+    "hectares": "Hectares",
+    "soilType": "Soil Type",
+    "soilUnknown": "I don't know / Soil test pending",
+    "waterSource": "Water Source",
+    "waterAvail": "Water Availability",
+    "currentCrop": "Current Crop",
+    "sowingDate": "Sowing Date",
+    "budget": "Available Cultivation Budget (₹)",
+    "primaryGoal": "Primary Farming Goal",
+    "goalProfit": "Higher Profitability",
+    "goalRisk": "Lower Risk / Crop Insurance",
+    "goalWater": "Less Water / Drought Resilient",
+    "goalOrganic": "Natural / Organic Farming",
+    "hasLivestock": "Do you own cattle, goats, or allied livestock?",
+    "yes": "Yes",
+    "no": "No",
+    "continue": "Continue",
+    "back": "Back",
+    "finish": "Save Farm & Enter Dashboard"
+  },
+  "dashboard": {
+    "greeting": "Vanakkam",
+    "activePlot": "Active Farmland Plot",
+    "editFarm": "Edit Farm Details",
+    "todaySummary": "Today's Farm Summary",
+    "weatherCard": {
+      "title": "Local Weather",
+      "spraySafe": "Safe for foliar spraying",
+      "viewDetails": "View 7-day forecast"
+    },
+    "cropCard": {
+      "title": "Active Crop",
+      "sown": "Sown",
+      "viewDetails": "View cultivation guide"
+    },
+    "taskCard": {
+      "title": "Upcoming Farm Task",
+      "pending": "Pending Operations",
+      "viewDetails": "View task checklist"
+    },
+    "mandiCard": {
+      "title": "Market Price Summary",
+      "trend": "Bullish Trend",
+      "viewDetails": "Compare selling channels"
+    },
+    "mainFeatures": "10 Main Agriculture Features",
+    "mainFeaturesSub": "Select any category below to access focused farming tools",
+    "nextSteps": "Recommended Next Steps",
+    "nextStepsItems": [
+      "Check tomorrow's weather forecast before scheduling irrigation.",
+      "Review the NPK split schedule for your vegetative crop.",
+      "Track your latest fertilizer and labour expenses in Farm Finance.",
+      "Check today's regulated APMC mandi rates for upcoming harvests."
+    ]
+  },
+  "modules": {
+    "m01": {
+      "number": "01",
+      "title": "Crop Planning and Farming Guidance",
+      "titleTa": "பயிர் திட்டம் & வழிகாட்டி",
+      "desc": "Crop recommendations based on soil, season, water and budget with NPK fertilizer dosing and calendar.",
+      "action": "Plan Cultivation"
+    },
+    "m02": {
+      "number": "02",
+      "title": "AI Crop Doctor",
+      "titleTa": "பயிர் மருத்துவர் & நோய் அறிதல்",
+      "desc": "Upload crop leaf photos, select observed symptoms, identify pests/diseases, and get organic neem remedies.",
+      "action": "Scan Crop Disease"
+    },
+    "m03": {
+      "number": "03",
+      "title": "Weather and Alerts",
+      "titleTa": "வானிலை & முன்னறிவிப்பு",
+      "desc": "Hyperlocal 7-day weather forecast, rainfall probability, humidity, heat alerts and spraying safety advice.",
+      "action": "Check Weather"
+    },
+    "m04": {
+      "number": "04",
+      "title": "Market Prices and Selling",
+      "titleTa": "சந்தை விலை & விற்பனை",
+      "desc": "APMC mandi spot prices, 7-day trend, and 3-channel harvest proceeds calculator (Mandi vs FPO vs Farmgate).",
+      "action": "Check Market Rates"
+    },
+    "m05": {
+      "number": "05",
+      "title": "Government Schemes and Insurance",
+      "titleTa": "அரசு மானியங்கள் & காப்பீடு",
+      "desc": "PM-KISAN, PMFBY crop insurance, 100% drip subsidy 3-question eligibility check and document checklist.",
+      "action": "View Subsidies"
+    },
+    "m06": {
+      "number": "06",
+      "title": "Farm Finance and Profit",
+      "titleTa": "பண்ணை நிதி & லாப கணக்கீடு",
+      "desc": "Cultivation cost calculator, Net Profit = Revenue − Costs, and 4% KCC loan repayment simulator.",
+      "action": "Calculate Profits"
+    },
+    "m07": {
+      "number": "07",
+      "title": "Farmer Community and Expert Support",
+      "titleTa": "உழவர் மன்றம் & விவாதங்கள்",
+      "desc": "Ask farming questions, share experiences, read answers, and connect with verified agricultural experts.",
+      "action": "Join Community"
+    },
+    "m08": {
+      "number": "08",
+      "title": "Equipment and Resource Sharing",
+      "titleTa": "உழவு இயந்திரங்கள் & கூலி",
+      "desc": "Tractor and machinery custom hiring rates (CHC), farm labour crew listings, and equipment rental enquiries.",
+      "action": "Rent Equipment"
+    },
+    "m09": {
+      "number": "09",
+      "title": "Livestock and Allied Farming",
+      "titleTa": "கால்நடை & 1962 ஆம்புலன்ஸ்",
+      "desc": "Cattle, goat and poultry healthcare, vaccination calendar, and direct 1-tap call to 1962 Animal Ambulance.",
+      "action": "Livestock Healthcare"
+    },
+    "m10": {
+      "number": "10",
+      "title": "Farm Management",
+      "titleTa": "பண்ணை மேலாண்மை & நிலங்கள்",
+      "desc": "Manage farmland plots, record land size & soil type, track sowing dates, task lists, and harvest ledger.",
+      "action": "Manage Plots & Tasks"
+    }
+  },
+  "contact": {
+    "title": "Contact Uzhavan Hub Support",
+    "sub": "Get in touch with agricultural extension coordinators and platform technical support.",
+    "name": "Your Name",
+    "email": "Your Email",
+    "phone": "Mobile Number",
+    "message": "Your Message / Question",
+    "submit": "Send Message",
+    "success": "Thank you! Your enquiry has been received. Our agricultural support team will respond shortly."
+  },
+  "services": {
+    "title": "Agricultural Platform Services",
+    "sub": "Ten integrated smart farming services designed for Tamil Nadu farmers."
+  }
+}
