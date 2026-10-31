@@ -4,7 +4,7 @@ color 0A
 
 echo ===================================================================
 echo   UZHAVAN HUB - UPLOADING FILES TO GITHUB
-echo   Repository: https://github.com/thrun-kumar/uzhavan-Hub
+echo   Repository: https://github.com/tharuntk43/uzhavan-hub-new
 echo ===================================================================
 echo.
 
@@ -25,9 +25,8 @@ if %ERRORLEVEL% EQU 0 (
     echo ===================================================================
     echo   [SUCCESS!] All project files are now uploaded to GitHub!
     echo.
-    echo   GitHub Pages is now building your website automatically.
-    echo   In about 60 seconds, open your live link:
-    echo   https://thrun-kumar.github.io/uzhavan-Hub/
+    echo   Repository link:
+    echo   https://github.com/tharuntk43/uzhavan-hub-new
     echo ===================================================================
 ) else (
     echo.
