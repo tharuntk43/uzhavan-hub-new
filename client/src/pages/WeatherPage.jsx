@@ -1,7 +1,7 @@
 import { Icon } from '../components/icons/LucideIcons.jsx';
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext.jsx';
-import { api } from '../services/api.js';
+import api from '../services/api.js';
 
 const TN_DISTRICTS = [
   "Ariyalur", "Chengalpattu", "Chennai", "Coimbatore", "Cuddalore", "Dharmapuri",

@@ -109,10 +109,14 @@ export class ExpressApp {
         }
       }
 
-      // Check API Routers
+      // Check API Routers (supporting both /api and /uzhavan-hub-new/api)
+      let apiPath = pathname;
+      if (apiPath.startsWith('/uzhavan-hub-new/api')) {
+        apiPath = apiPath.substring('/uzhavan-hub-new'.length);
+      }
       for (const { prefix, router } of this.routers) {
-        if (pathname.startsWith(prefix)) {
-          const subPath = pathname.substring(prefix.length) || '/';
+        if (apiPath.startsWith(prefix)) {
+          const subPath = apiPath.substring(prefix.length) || '/';
           for (const route of router.routes) {
             if (route.method === req.method) {
               const match = subPath.match(route.regex);
@@ -143,9 +147,22 @@ export class ExpressApp {
         }
       }
 
+      // Security block: Never serve database, environment, or secret files
+      const blockedExtensions = ['.db', '.db-wal', '.db-shm', '.db-journal', '.sqlite', '.sqlite3', '.env'];
+      if (blockedExtensions.some(ext => pathname.toLowerCase().endsWith(ext)) || pathname.toLowerCase().includes('uzhavan.db')) {
+        res.status(404).json({ success: false, error: 'Not found' });
+        return;
+      }
+
+      // Strip base path prefix if present (e.g. /uzhavan-hub-new)
+      let relativePath = pathname;
+      if (relativePath.startsWith('/uzhavan-hub-new')) {
+        relativePath = relativePath.substring('/uzhavan-hub-new'.length) || '/';
+      }
+
       // Static file serving: Check all static dirs first
       for (const staticDir of this.staticDirs) {
-        let filePath = path.join(staticDir, pathname === '/' ? 'index.html' : pathname);
+        let filePath = path.join(staticDir, relativePath === '/' ? 'index.html' : relativePath);
         if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
           serveStaticFile(res, filePath);
           return;
@@ -153,8 +170,8 @@ export class ExpressApp {
       }
 
       // SPA fallback ONLY for HTML navigation routes without file extensions
-      const hasFileExt = path.extname(pathname).length > 0;
-      if (!hasFileExt && !pathname.startsWith('/api')) {
+      const hasFileExt = path.extname(relativePath).length > 0;
+      if (!hasFileExt && !pathname.startsWith('/api') && !relativePath.startsWith('/api')) {
         for (const staticDir of this.staticDirs) {
           const indexHtml = path.join(staticDir, 'index.html');
           if (fs.existsSync(indexHtml)) {

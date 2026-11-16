@@ -21,30 +21,29 @@ export async function listPlots(req, res) {
 
 export async function addPlot(req, res) {
   try {
-    const {
-      plotName,
-      area,
-      unit = 'acres',
-      soilType = 'Clayey Alluvial Soil',
-      soilPh = 7.0,
-      organicCarbon = '0.65%',
-      fertilityNotes = '',
-      irrigationSource = 'Canal',
-      waterAvailability = 'Abundant',
-      currentCrop = 'Paddy',
-      previousCrop = 'Black Gram',
-      plannedCrop = 'Sesame',
-      sowingDate,
-      estimatedBudget = 25000,
-      isActive = false
-    } = req.body;
+    const body = req.body || {};
+    const plotName = body.plotName || body.plot_name;
+    const area = body.area !== undefined ? body.area : body.area_value;
+    const unit = body.unit || body.area_unit || 'acres';
+    const soilType = body.soilType || body.soil_type || 'Clayey Alluvial Soil';
+    const soilPh = body.soilPh !== undefined ? body.soilPh : (body.soil_ph !== undefined ? body.soil_ph : 7.0);
+    const organicCarbon = body.organicCarbon || body.organic_carbon || '0.65%';
+    const fertilityNotes = body.fertilityNotes || body.fertility_notes || '';
+    const irrigationSource = body.irrigationSource || body.irrigation_source || 'Canal';
+    const waterAvailability = body.waterAvailability || body.water_availability || 'Abundant';
+    const currentCrop = body.currentCrop || body.current_crop || 'Paddy';
+    const previousCrop = body.previousCrop || body.previous_crop || 'Black Gram';
+    const plannedCrop = body.plannedCrop || body.planned_crop || 'Sesame';
+    const sowingDate = body.sowingDate || body.sowing_date;
+    const estimatedBudget = body.estimatedBudget !== undefined ? body.estimatedBudget : (body.budget !== undefined ? body.budget : 25000);
+    const isActive = body.isActive !== undefined ? body.isActive : (body.is_active || false);
 
-    if (!plotName || !area) {
+    if (!plotName || area === undefined || area === null || isNaN(parseFloat(area))) {
       return res.status(400).json({ success: false, error: 'Plot name and land area are required.' });
     }
 
     let normalizedAcres = parseFloat(area) || 1.0;
-    const cleanUnit = unit.toLowerCase();
+    const cleanUnit = (unit || 'acres').toLowerCase();
     if (cleanUnit === 'hectares' || cleanUnit === 'ha') {
       normalizedAcres = normalizedAcres * 2.471;
     } else if (cleanUnit === 'cents') {
@@ -109,28 +108,27 @@ export async function updatePlot(req, res) {
 
     if (!checkOwnership(req, res, existing.user_id)) return;
 
-    const {
-      plotName,
-      area,
-      unit,
-      soilType,
-      soilPh,
-      organicCarbon,
-      fertilityNotes,
-      irrigationSource,
-      waterAvailability,
-      currentCrop,
-      previousCrop,
-      plannedCrop,
-      sowingDate,
-      estimatedBudget
-    } = req.body;
+    const body = req.body || {};
+    const plotName = body.plotName || body.plot_name;
+    const area = body.area !== undefined ? body.area : body.area_value;
+    const unit = body.unit || body.area_unit;
+    const soilType = body.soilType || body.soil_type;
+    const soilPh = body.soilPh !== undefined ? body.soilPh : body.soil_ph;
+    const organicCarbon = body.organicCarbon || body.organic_carbon;
+    const fertilityNotes = body.fertilityNotes || body.fertility_notes;
+    const irrigationSource = body.irrigationSource || body.irrigation_source;
+    const waterAvailability = body.waterAvailability || body.water_availability;
+    const currentCrop = body.currentCrop || body.current_crop;
+    const previousCrop = body.previousCrop || body.previous_crop;
+    const plannedCrop = body.plannedCrop || body.planned_crop;
+    const sowingDate = body.sowingDate || body.sowing_date;
+    const estimatedBudget = body.estimatedBudget !== undefined ? body.estimatedBudget : body.budget;
 
     let normalizedAcres = existing.area_acres;
     let cleanUnit = existing.area_unit;
     let originalArea = existing.area_original;
 
-    if (area !== undefined) {
+    if (area !== undefined && area !== null && !isNaN(parseFloat(area))) {
       cleanUnit = (unit || existing.area_unit || 'acres').toLowerCase();
       normalizedAcres = parseFloat(area) || 1.0;
       originalArea = parseFloat(area);

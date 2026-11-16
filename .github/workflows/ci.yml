@@ -1,0 +1,70 @@
+name: CI Client Build & Tests
+
+on:
+  pull_request:
+    branches: ["main"]
+  push:
+    branches: ["main", "fix/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  client-build-and-test:
+    name: Client Production Build & Regression Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install client dependencies
+        working-directory: client
+        run: npm install
+
+      - name: Run client production build (Vite)
+        working-directory: client
+        env:
+          VITE_BASE_PATH: /uzhavan-hub-new/
+        run: npm run build
+
+      - name: Verify production build output & base URL
+        run: |
+          echo "=== Verifying client/dist production bundle ==="
+          test -f client/dist/index.html
+          echo "PASS: client/dist/index.html exists"
+
+          # Verify entry point references /uzhavan-hub-new/
+          if grep -q '/uzhavan-hub-new/' client/dist/index.html; then
+            echo "PASS: index.html correctly loads bundled assets under /uzhavan-hub-new/"
+          else
+            echo "ERROR: index.html does not reference /uzhavan-hub-new/"
+            cat client/dist/index.html
+            exit 1
+          fi
+
+          # Verify database exclusion
+          DB_COUNT=$(find client/dist -type f \( -name "*.db*" -o -name "*.sqlite*" \) | wc -l)
+          if [ "$DB_COUNT" -eq 0 ]; then
+            echo "PASS: Zero database files present in client/dist"
+          else
+            echo "ERROR: Database file found in production build output!"
+            exit 1
+          fi
+
+      - name: Run backend and regression test suites
+        run: |
+          node tests/test_demo_bypass_regression.js
+          node tests/test_db_exposure.js
+          node tests/test_client_modules.js
+          node tests/test_plots_regression.js
+          node tests/test_pages_artifact.js
+          node tests/test_uzhavan_path_routing.js
+          node tests/test_api_endpoints.js

@@ -29,10 +29,37 @@ jobs:
         with:
           enablement: true
 
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build client production bundle (Vite)
+        working-directory: client
+        env:
+          VITE_BASE_PATH: /uzhavan-hub-new/
+        run: |
+          npm install
+          npm run build
+
+      - name: Assemble GitHub Pages static artifact
+        run: |
+          mkdir -p dist
+          # Copy compiled Vite production output
+          cp -r client/dist/* dist/
+          # Provide 404 SPA fallback for HTML5 routing
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+          # Copy static icons and fallback assets
+          cp -r assets dist/ 2>/dev/null || true
+          cp -r client/public/* dist/ 2>/dev/null || true
+          # Strictly purge any database, server, or secret files from artifact
+          rm -f dist/*.db* dist/*.sqlite* dist/*.db-wal dist/*.db-shm dist/*.env*
+
       - name: Upload static website artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment

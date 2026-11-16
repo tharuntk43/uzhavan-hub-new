@@ -91,6 +91,10 @@ export const Calculator = createLucideIcon('calculator', [
 ]);
 
 // 4. Users, Community & Communication
+export const User = createLucideIcon('user', [
+  "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+], { cx: "12", cy: "7", r: "4" });
+
 export const Users = createLucideIcon('users', [
   "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
   "M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z",
@@ -300,7 +304,7 @@ export const allIcons = {
   dollarSign: DollarSign,
   calculator: Calculator,
   users: Users,
-  user: Users,
+  user: User,
   phone: Phone,
   mail: Mail,
   eye: Eye,

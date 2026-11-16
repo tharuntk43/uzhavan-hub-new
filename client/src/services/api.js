@@ -3,7 +3,9 @@
  * Central communication layer for all 23 backend modules
  */
 
-const API_BASE = '/api';
+const API_BASE = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE_URL)
+  ? import.meta.env.VITE_API_BASE_URL.replace(/\/$/, '')
+  : '/api';
 
 function getAuthHeader() {
   const token = localStorage.getItem('uzhavan_token');
@@ -99,3 +101,5 @@ export const api = {
   translateLingo: (data) => request('/lingo/translate', { method: 'POST', body: data }),
   assistantChat: (data) => request('/assistant/chat', { method: 'POST', body: data })
 };
+
+export default api;

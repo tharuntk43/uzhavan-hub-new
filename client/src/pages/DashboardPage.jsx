@@ -84,11 +84,11 @@ export default function DashboardPage({ onNavigate, onOpenAddPlot }) {
             </span>
             <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 flex items-center gap-1.5 shadow-2xs">
               <CalendarCheck size={13} className="text-emerald-200" />
-              <span>{plots?.length || 2} Plots</span>
+              <span>{plots?.length ?? 0} {plots?.length === 1 ? (isTa ? 'பண்ணை நிலம்' : 'Plot') : (isTa ? 'பண்ணை நிலங்கள்' : 'Plots')}</span>
             </span>
             <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 flex items-center gap-1.5 shadow-2xs">
               <Wheat size={13} className="text-emerald-200" />
-              <span>{activePlot?.area_value || '3.50'} {activePlot?.area_unit || 'Acres'}</span>
+              <span>{activePlot ? `${activePlot.area_value ?? activePlot.area_acres} ${activePlot.area_unit || 'Acres'}` : (isTa ? 'நிலம் சேர்க்கவும்' : 'No plot added')}</span>
             </span>
             <button 
               onClick={() => onNavigate('farm_management')}
