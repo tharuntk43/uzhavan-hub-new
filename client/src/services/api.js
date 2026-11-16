@@ -3,7 +3,9 @@
  * Central communication layer for all 23 backend modules
  */
 
-const API_BASE = '/api';
+const API_BASE = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE_URL)
+  ? import.meta.env.VITE_API_BASE_URL.replace(/\/$/, '')
+  : '/api';
 
 function getAuthHeader() {
   const token = localStorage.getItem('uzhavan_token');
