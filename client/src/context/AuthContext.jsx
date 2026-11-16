@@ -40,41 +40,59 @@ export function AuthProvider({ children }) {
     }
   }, []);
 
+  const normalizePlot = (p) => {
+    if (!p) return null;
+    return {
+      ...p,
+      plot_name: p.plot_name || p.plotName || 'Farmland Plot',
+      area_value: p.area_original !== undefined && p.area_original !== null
+        ? p.area_original
+        : (p.area !== undefined && p.area !== null ? p.area : p.area_acres),
+      area_unit: p.area_unit || p.unit || 'acres',
+      soil_type: p.soil_type || p.soilType || 'Alluvial',
+      soil_ph: p.soil_ph !== undefined && p.soil_ph !== null ? p.soil_ph : (p.soilPh ?? 7.0),
+      irrigation_source: p.irrigation_source || p.irrigationSource || 'Canal',
+      water_availability: p.water_availability || p.waterAvailability || 'Moderate',
+      current_crop: p.current_crop || p.currentCrop || 'Paddy',
+      previous_crop: p.previous_crop || p.previousCrop || '',
+      planned_crop: p.planned_crop || p.plannedCrop || '',
+      sowing_date: p.sowing_date || p.sowingDate || '',
+      estimated_budget: p.estimated_budget !== undefined && p.estimated_budget !== null
+        ? p.estimated_budget
+        : (p.estimatedBudget !== undefined ? p.estimatedBudget : (p.budget ?? 25000))
+    };
+  };
+
+  const refreshPlots = async () => {
+    if (!user) {
+      setPlots([]);
+      setActivePlot(null);
+      return [];
+    }
+    try {
+      const res = await api.listPlots();
+      const rawPlots = res.plots || (Array.isArray(res) ? res : []);
+      const plotList = rawPlots.map(normalizePlot);
+      setPlots(plotList);
+      if (plotList.length > 0) {
+        const active = plotList.find(p => p.is_active || p.isActive) || plotList[0];
+        setActivePlot(active);
+      } else {
+        setActivePlot(null);
+      }
+      return plotList;
+    } catch (err) {
+      console.warn('[Plots Load Warning]', err);
+      setPlots([]);
+      setActivePlot(null);
+      return [];
+    }
+  };
+
   // Fetch plots whenever user changes
   useEffect(() => {
     if (user) {
-      api.getPlots().then(res => {
-        const plotList = res.plots || (Array.isArray(res) ? res : []);
-        setPlots(plotList);
-        if (plotList.length > 0) {
-          const active = plotList.find(p => p.is_active || p.isActive) || plotList[0];
-          setActivePlot(active);
-        } else {
-          setActivePlot({
-            id: 'default_plot',
-            plot_name: 'Vadakku Kadu (North Field)',
-            area_value: 3.5,
-            area_unit: 'acres',
-            soil_type: 'red',
-            soil_ph: 6.8,
-            irrigation_source: 'borewell',
-            water_availability: 'Moderate',
-            current_crop: 'Cotton & Black Gram'
-          });
-        }
-      }).catch(() => {
-        setActivePlot({
-          id: 'default_plot',
-          plot_name: 'Vadakku Kadu (North Field)',
-          area_value: 3.5,
-          area_unit: 'acres',
-          soil_type: 'red',
-          soil_ph: 6.8,
-          irrigation_source: 'borewell',
-          water_availability: 'Moderate',
-          current_crop: 'Cotton & Black Gram'
-        });
-      });
+      refreshPlots();
     } else {
       setPlots([]);
       setActivePlot(null);
@@ -162,8 +180,9 @@ export function AuthProvider({ children }) {
   };
 
   const addPlotToState = (newPlot) => {
-    setPlots(prev => [newPlot, ...prev]);
-    setActivePlot(newPlot);
+    const normalized = normalizePlot(newPlot);
+    setPlots(prev => [normalized, ...prev]);
+    setActivePlot(normalized);
   };
 
   return (
@@ -179,7 +198,8 @@ export function AuthProvider({ children }) {
       register,
       logout,
       switchActivePlot,
-      addPlotToState
+      addPlotToState,
+      refreshPlots
     }}>
       {children}
     </AuthContext.Provider>

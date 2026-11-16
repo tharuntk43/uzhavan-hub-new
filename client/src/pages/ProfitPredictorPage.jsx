@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext.jsx';
-import { api } from '../services/api.js';
+import api from '../services/api.js';
 
 export default function ProfitPredictorPage() {
   const { activePlot } = useAuth();

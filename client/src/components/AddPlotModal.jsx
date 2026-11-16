@@ -40,14 +40,27 @@ export default function AddPlotModal({ isOpen, onClose, onPlotAdded }) {
     setLoading(true);
     setError(null);
     try {
-      const res = await api.addPlot({
-        ...formData,
-        area_value: parseFloat(formData.area_value),
-        soil_ph: parseFloat(formData.soil_ph),
-        budget: parseFloat(formData.budget)
-      });
-      if (res.plot || res.id) {
-        onPlotAdded && onPlotAdded(res.plot || res);
+      const payload = {
+        plotName: formData.plot_name.trim(),
+        area: parseFloat(formData.area_value),
+        unit: formData.area_unit,
+        soilType: formData.soil_type,
+        soilPh: parseFloat(formData.soil_ph),
+        organicCarbon: formData.organic_carbon || '0.65%',
+        fertilityNotes: formData.fertility_notes || '',
+        irrigationSource: formData.irrigation_source,
+        waterAvailability: formData.water_availability,
+        currentCrop: formData.current_crop,
+        previousCrop: formData.previous_crop,
+        plannedCrop: formData.planned_crop,
+        sowingDate: formData.sowing_date,
+        estimatedBudget: parseFloat(formData.budget)
+      };
+
+      const res = await api.addPlot(payload);
+      const savedPlot = res.plot || res;
+      if (savedPlot) {
+        onPlotAdded && onPlotAdded(savedPlot);
         onClose();
       } else {
         setError(res.error || 'Failed to create plot');

@@ -58,7 +58,7 @@ export async function register(req, res) {
 
     // Duplicate check
     const existing = await db.get(
-      'SELECT id FROM users WHERE (email = ? AND email != "") OR (phone = ? AND phone != "")',
+      "SELECT id FROM users WHERE (email = ? AND email != '') OR (phone = ? AND phone != '')",
       [cleanEmail || '___none___', cleanPhone || '___none___']
     );
 
@@ -195,31 +195,31 @@ export async function login(req, res) {
     }
 
     if (!user) {
-      // Query by email, including demo aliases
-      let targetEmail = rawIdentifier.toLowerCase();
-      if (targetEmail.includes('murugan')) targetEmail = 'murugan@uzhavan.tn.gov.in';
-      else if (targetEmail.includes('anitha')) targetEmail = 'anitha@uzhavan.tn.gov.in';
-      else if (targetEmail.includes('selvam')) targetEmail = 'selvam@uzhavan.tn.gov.in';
-
+      // Query strictly by exact email (case-insensitive)
       user = await db.get(`
         SELECT u.*, p.state, p.district, p.village, p.farmer_type, p.experience_years, p.primary_activity, p.avatar
         FROM users u
         LEFT JOIN farmer_profiles p ON u.id = p.user_id
-        WHERE LOWER(u.email) = ? OR LOWER(u.email) = ?
-      `, [rawIdentifier.toLowerCase(), targetEmail]);
+        WHERE LOWER(u.email) = ?
+      `, [rawIdentifier.toLowerCase()]);
     }
 
     if (!user) {
       return res.status(401).json({ success: false, error: 'Invalid email address, mobile number or password.' });
     }
 
+    // Verify password strictly against stored hash for this exact account
     const testHash = db.hashPassword(password);
-    const isDemoUser = user.email.includes('murugan') || user.email.includes('anitha') || user.email.includes('selvam');
-    const isPasswordValid = user.password_hash === testHash || (isDemoUser && (password === 'password123' || password === 'Farmer@123'));
-
-    if (!isPasswordValid) {
+    if (user.password_hash !== testHash) {
       return res.status(401).json({ success: false, error: 'Invalid email address, mobile number or password.' });
     }
+
+    const DEMO_EMAILS = new Set([
+      'murugan@uzhavan.tn.gov.in',
+      'anitha@uzhavan.tn.gov.in',
+      'selvam@uzhavan.tn.gov.in'
+    ]);
+    const isDemoUser = DEMO_EMAILS.has((user.email || '').toLowerCase());
 
     const ip = req.ip || '127.0.0.1';
     const userAgent = req.headers['user-agent'] || 'browser';

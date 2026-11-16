@@ -1,6 +1,6 @@
 import { Icon } from '../components/icons/LucideIcons.jsx';
 import React, { useState } from 'react';
-import { api } from '../services/api.js';
+import api from '../services/api.js';
 
 export default function CropDoctorPage() {
   const [selectedImage, setSelectedImage] = useState(null);

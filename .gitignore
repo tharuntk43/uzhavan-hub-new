@@ -9,10 +9,14 @@ dist-ssr/
 .env
 .env.*.local
 
-# Databases & WAL logs
+# Databases & SQLite runtime files
+*.db
+*.sqlite
+*.sqlite3
 *.db-journal
 *.db-wal
 *.db-shm
+uzhavan.db
 
 # Python
 __pycache__/

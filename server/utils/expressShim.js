@@ -143,6 +143,13 @@ export class ExpressApp {
         }
       }
 
+      // Security block: Never serve database, environment, or secret files
+      const blockedExtensions = ['.db', '.db-wal', '.db-shm', '.db-journal', '.sqlite', '.sqlite3', '.env'];
+      if (blockedExtensions.some(ext => pathname.toLowerCase().endsWith(ext)) || pathname.toLowerCase().includes('uzhavan.db')) {
+        res.status(404).json({ success: false, error: 'Not found' });
+        return;
+      }
+
       // Static file serving: Check all static dirs first
       for (const staticDir of this.staticDirs) {
         let filePath = path.join(staticDir, pathname === '/' ? 'index.html' : pathname);

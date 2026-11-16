@@ -13,8 +13,25 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const ROOT_DIR = path.resolve(__dirname, '../../');
-const DB_FILE = path.join(ROOT_DIR, 'uzhavan.db');
+const OLD_DB_FILE = path.join(ROOT_DIR, 'uzhavan.db');
+const DB_FILE = process.env.DB_PATH || path.join(__dirname, 'uzhavan.db');
 const SCHEMA_FILE = path.join(__dirname, 'schema.sql');
+
+// Ensure target database directory exists and migrate existing farmer data if needed
+const dbDir = path.dirname(DB_FILE);
+if (!fs.existsSync(dbDir)) {
+  fs.mkdirSync(dbDir, { recursive: true });
+}
+if (!fs.existsSync(DB_FILE) && fs.existsSync(OLD_DB_FILE)) {
+  try {
+    console.log(`[Database Migration] Preserving farmer data: copying from ${OLD_DB_FILE} to ${DB_FILE}`);
+    fs.copyFileSync(OLD_DB_FILE, DB_FILE);
+    if (fs.existsSync(OLD_DB_FILE + '-wal')) fs.copyFileSync(OLD_DB_FILE + '-wal', DB_FILE + '-wal');
+    if (fs.existsSync(OLD_DB_FILE + '-shm')) fs.copyFileSync(OLD_DB_FILE + '-shm', DB_FILE + '-shm');
+  } catch (migErr) {
+    console.warn('[Database Migration Warning] Failed to copy legacy database file:', migErr);
+  }
+}
 
 class DatabaseAdapter {
   constructor() {

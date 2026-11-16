@@ -311,8 +311,27 @@
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-${key} shrink-0 inline-block align-middle ${className}" aria-hidden="true">${circleSvg}${rectSvg}${ellipseSvg}${pathSvg}</svg>`;
   }
 
+  function initIcons() {
+    const iconMap = {
+      loginLogoIcon: 'leaf',
+      cardEcoIcon: 'leaf',
+      badgeIcon1: 'sprout',
+      badgeIcon2: 'cloudSun',
+      badgeIcon3: 'trendingUp',
+      badgeIcon4: 'users',
+      taglineLeaf: 'leaf'
+    };
+    for (const [id, icon] of Object.entries(iconMap)) {
+      const el = document.getElementById(id);
+      if (el && !el.innerHTML.trim()) {
+        el.innerHTML = getLucideSvg(icon, { size: 24, color: 'currentColor' });
+      }
+    }
+  }
+
   window.UzhavanLucide = {
     getSvg: getLucideSvg,
-    iconAliases
+    iconAliases,
+    init: initIcons
   };
 })(window);

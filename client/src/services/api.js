@@ -99,3 +99,5 @@ export const api = {
   translateLingo: (data) => request('/lingo/translate', { method: 'POST', body: data }),
   assistantChat: (data) => request('/assistant/chat', { method: 'POST', body: data })
 };
+
+export default api;
